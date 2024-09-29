@@ -1,0 +1,73 @@
+relativeURLs = false
+languageCode = 'en-us'
+title = 'Visual II'
+theme = 'hugo-theme-relearn'
+
+[params]
+  collapsibleMenu = true
+  themeVariant = [
+    { identifier = "relearn-auto",   name = "Colors: System Setting", auto = [] },
+    { identifier = "relearn-light",  name = "Colors: Light"  },
+    { identifier = "relearn-dark",   name = "Colors: Dark"},
+    { identifier = "relearn-bright", name = "Colors: Bright" }
+  ]
+
+  disableLandingPageButton = true
+
+[outputs]
+  home = ['html', 'rss', 'print', 'search']
+  page = ['html', 'rss', 'print']
+  section = ['html', 'rss', 'print']
+
+[markup]
+  [markup.highlight]
+    # line numbers in a table layout will shift if code is wrapping, so better
+    # not use it; visually both layouts have the same look and behavior
+    lineNumbersInTable = false
+
+    # the shipped variants come with their own modified chroma syntax highlighting
+    # stylesheets which are linked in your generated HTML pages; you can use Hugo to generate
+    # own stylesheets to your liking and use them in your variant;
+    # if you want to use Hugo's internal styles instead of the shipped stylesheets:
+    # - remove `noClasses` or set `noClasses = true`
+    # - set `style` to a predefined style name
+    # note: with using the internal styles, the `--CODE-theme` setting in your variant
+    # stylesheet will be ignored and the internal style is used for all variants and
+    # even print
+    noClasses = false
+    # style = "tango"
+
+  [markup.goldmark]
+    # this is required for the themes exampleSite to make the piratify shortcode work
+    duplicateResourceFiles = true
+
+    # activated for this showcase to use HTML and JavaScript; decide on your own needs;
+    # if in doubt, remove this line
+    renderer.unsafe = true
+
+  [markup.goldmark.extensions]
+    strikethrough = false
+
+    # use Markdown extensions for this showcase
+    [markup.goldmark.extensions.extras]
+      [markup.goldmark.extensions.extras.delete]
+        enable = true
+      [markup.goldmark.extensions.extras.insert]
+        enable = true
+      [markup.goldmark.extensions.extras.mark]
+        enable = true
+      [markup.goldmark.extensions.extras.subscript]
+        enable = true
+      [markup.goldmark.extensions.extras.superscript]
+        enable = true
+
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        # the settings chosen here match the default initialization
+        # of the MathJax library chosen by the theme;
+        # if you want to adjust to different values you also need
+        # to set them in `[params] mathJaxInitialize`
+        inline = [['\(', '\)'], ['$',  '$']]
+        block  = [['\[', '\]'], ['$$', '$$']]
+

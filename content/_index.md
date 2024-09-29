@@ -3,33 +3,44 @@ archetype = "home"
 title = ""
 +++
 
-Dies ist die Seite der Veranstaltund "Datenverarbeitung in der Medienproduktion"
-
-In this module we will learn how to create a 3D character and export it as a game asset. We will use [Blender](https://www.blender.org/) as the main content creation tool. To verify that our asset can be used in a game engine, we will use [Godot](https://godotengine.org/) as an example game engine. 
-
-Topics covered in detail in this module are
-
-- Introduction into Blender
-- Virtual clay modeling
-- Sculpting
-- Retopology
-- UV-Unwrapping
-- Texturing
-- Game-Engine Export 
+Dies ist die Seite der Veranstaltung "Datenverarbeitung in der Medienproduktion"
 
 
+Inhalt des Seminars im WiSe 2024/25: Vergleich zwischen Game Engines. Ziel ist die Erstellung eines Artikels, der die drei Game-Engines
 
-We will *not* learn how to setup our 3D model for animation nor will we animate it during this course. Animation will be covered in subsequent modules.
+- Unreal,
+- Unity und
+- Godot
 
-Requirements
+in mehreren Kategorien miteinander vergleicht. Die Sparten, in denen der Vergleich stattfinden soll soll durch die Teilnehmer des Kurses festgelegt werden. Ideen dafür könnten sein:
 
-- A decent (not necessarily high-end) laptop or desktop computer running a contemporary operating system (Windows, macOS, Linux)
-- Latest versions of Blender and Godot installed
-- A 3-button mouse with mouse wheel. Ideally the middle mouse button is seperated from the mouse wheel (at least on Windows and Linux. Blender on macOS handles apple mice in a special way).
-- Preferably a keyboard with a separate numeric keypad. If your Laptop doesn't have a seperate keypad, consider buying a cheap extra pad.
+- Setup-Zeit
+- Lernkurve
+- Dokumentation (Umfang und Qualität)
+- Community-Unterstützung
+- Performance, z. B.
+  - Rendergeschwindigkeit
+  - Compilier-/Build-Geschwindigkeit
+  - Anzahl der darstellbaren Polygone und Messung der Framerate
+- Art und Tiefe der Unterstützung bestimmter Features, z. B.
+  - (Char-)Animationen
+  - Inverse Kinematik
+  - Path finding
+  - 2D-Games
+  - Sound
+  - NPCs
+- Umfang und Qualität des UI-Systems
+- Qualität der Unterstützung diverser Plattformen
+  - Desktop
+    - Windows
+    - Linux
+    - macOS
+  - Mobile
+    - Android
+    - iOS
+  - Browser
+- ...
 
-Additional hardware. This is not required but can be helpful for students planning focus on 3D modeling.
+Die Teilnehmer sollen die Kategorien festlegen, sowie eine Systematik entwickeln, mit der in jeder Kategorie die Vergleiche 
 
-- Graphics tablet
-- Space Mouse
-
+Als Vergleichsgegenstand soll auf allen drei Engines ein Game entwickelt werden, das insbesondere die festgelegten Vergleichskategorien verwendet. Im Rahmen der Veranstaltung soll ein Game-Konzept entwickelt werden und auf allen drei Engines implementiert werden.

@@ -3,7 +3,7 @@ archetype = "home"
 title = ""
 +++
 
-Welcome to the Visual 2 module's web site.
+Dies ist die Seite der Veranstaltund "Datenverarbeitung in der Medienproduktion"
 
 In this module we will learn how to create a 3D character and export it as a game asset. We will use [Blender](https://www.blender.org/) as the main content creation tool. To verify that our asset can be used in a game engine, we will use [Godot](https://godotengine.org/) as an example game engine. 
 

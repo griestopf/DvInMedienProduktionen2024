@@ -18,6 +18,11 @@ weight = 10
 
 - Vergleichskategorien festlegen
 - Zu Gruppen zusammen finden
+- Hausaufgaben: pro Gruppe
+  - Vergleichskategorien priorisieren
+  - Erste Konzepte: Wie vergleiche ich jeweils die Kategorie?
+  - Repository forken
+
 
 
 <!--

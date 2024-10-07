@@ -1,9 +1,11 @@
 +++
 title = "Relearn md examples"
 date = 2024-08-05T14:20:54+02:00
-draft = true 
+draft = false 
 weight = 9999
 +++
+
+In addition to the features offered by [GitHub-Flavored-Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), the [Hugo Relearn Theme](https://mcshelby.github.io/hugo-theme-relearn/i) allows the following extra features:
 
 Press <kbd>STRG</kbd> <kbd>ALT</kbd> <kbd>DEL</kbd> to end your shift early.
 

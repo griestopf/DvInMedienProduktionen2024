@@ -1,8 +1,8 @@
 +++
-title = 'Grupe 03'
+title = 'Gruppe 03'
 date = 2024-09-28T15:40:23+02:00
 draft = false
-weight = 100
+weight = 300
 
 +++
 

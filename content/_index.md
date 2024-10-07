@@ -41,6 +41,6 @@ in mehreren Kategorien miteinander vergleicht. Die Sparten, in denen der Verglei
   - Browser
 - ...
 
-Die Teilnehmer sollen die Kategorien festlegen, sowie eine Systematik entwickeln, mit der in jeder Kategorie die Vergleiche 
+Die Teilnehmer sollen die Kategorien festlegen, sowie eine Systematik entwickeln, mit der in jeder Kategorie die Vergleiche durchgeführt werden können.
 
 Als Vergleichsgegenstand soll auf allen drei Engines ein Game entwickelt werden, das insbesondere die festgelegten Vergleichskategorien verwendet. Im Rahmen der Veranstaltung soll ein Game-Konzept entwickelt werden und auf allen drei Engines implementiert werden.

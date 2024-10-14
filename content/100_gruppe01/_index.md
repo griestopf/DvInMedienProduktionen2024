@@ -42,6 +42,8 @@ weight = 100
     - Effizienz der Bedienung
     - Feature-Umfang
     - Performance-Vergleich zwischen Engines (Wie viele Objekte können an Physiksimulation teilnehmen)
+
+
 ## Hoch
 - Benutzerfreundlichkeit / Usability der Engine (Einstieg dokumentieren und UI Elemente analysieren)
 	- Integration von 3rd-Party Add-Ons in Engine-Ökosystem (Marketplace etc.)

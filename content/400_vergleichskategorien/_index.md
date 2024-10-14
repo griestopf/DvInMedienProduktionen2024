@@ -5,6 +5,8 @@ draft = false
 weight = 400
 +++
 
+## Sammlung vom 7.10.
+
 - Rentabilität/Kosten
   - Lizenzmodelle
     - Pay per use
@@ -78,5 +80,7 @@ weight = 400
 - Barrierefreiheit
   - Feature-Umfang
 
+
+## Priorisierung vom 14.10.
 
 

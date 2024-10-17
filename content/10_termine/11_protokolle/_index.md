@@ -25,8 +25,10 @@ weight = 10
 
 ## 14. Okt
 
-- 
-
+- Priolisten und Vergleichskonzepte angesehen, verglichen 
+- Hausaufgabe 
+  - mch: Priolisten vereinheitlichen
+  - Pro Gruppe: Für eigene hoch priorisierte Kategorien: Wie könnte ein Vergleich dieser Kategorie in einem Game durchgeführt werden?
 
 <!--
 ## 14. Okt Vergleichskategorien: Wie vergleichen? Arbeit in Gruppen 

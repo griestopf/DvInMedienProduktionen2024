@@ -12,17 +12,18 @@
 - **Analysiere**: Wie intuitiv sind die Benutzeroberfläche und der Workflow? Gibt es Tutorials und Beispiele für Einsteiger?
 
 ## 3. Kompatibilität von Add-Ons und Plug-Ins
-**Priorität: Mittel** 
+**Priorität: Niedrig** 
 
 - **Vergleiche**: Anzahl und Qualität der verfügbaren Add-Ons, wie leicht sie in den Workflow integriert werden können.
 
-## 4. Verwendete Programmiersprache
+## 4. Verwendete Programmierumgebung
 **Priorität: Hoch** 
 
 - **Analysiere**: Wie einfach sind die verwendeten Sprachen zu erlernen? Gibt es eine aktive Community und Dokumentation für die Programmierung?
+- Schwierig: Unreal Blueprints oder C++ als Vergleich verwenden?
 
 ## 5. Multiplayer/Netzwerkunterstützung
-**Priorität: Mittel**
+**Priorität: Niedrig**
 
 - **Vergleiche**: Welche Engine bietet einfachere Tools oder vorgefertigte Lösungen für Netzwerkanwendungen? Feature-Umfang und Dokumentation.
 
@@ -52,7 +53,7 @@
 - **Vergleiche**: Wie leicht und schnell lassen sich Animationen und Physik einbinden? Umfang und Performance von Physik-Simulationen.
 
 ## 11. VR/AR-Unterstützung
-**Priorität: Mittel** 
+**Priorität: Mittel/Niedrig** 
 
 - **Vergleiche**: Wie gut wird VR/AR-Hardware unterstützt? Teste die Performance und Kompatibilität mit eurer Hardware.
 

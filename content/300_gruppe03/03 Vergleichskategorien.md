@@ -33,7 +33,7 @@
 - **Analysiere**: Standardmäßige Licht- und Schatteneffekte, Partikelsysteme, Postprocessing. Teste die visuelle Qualität der Engines unter verschiedenen Bedingungen.
 
 ## 7. Performance
-**Priorität: Hoch** (
+**Priorität: Hoch** 
 
 - **Vergleiche**: FPS unter ähnlichen Bedingungen, Ladezeiten, Speicherverbrauch (RAM/CPU) und plattformübergreifende Leistung.
 

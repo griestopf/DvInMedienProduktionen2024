@@ -191,7 +191,9 @@ weight = 400
 ### Zusammenfassung nach Themen
 
 - Von 3 Gruppen genannt:
-  - Benutzerfreundlichkeit / Usability der Engine
+
+
+  - (LFD 1) Benutzerfreundlichkeit / Usability der Engine
     - Integration von 3rd-Party Add-Ons in Engine-Ökosystem (Marketplace etc.)
     - Anzahl / Funktionsumfang / Update-Geschwindigkeit
     - Wie schwer ist der Einstieg?
@@ -202,8 +204,9 @@ weight = 400
       - Wie intuitiv sind die Benutzeroberfläche und der Workflow? Gibt es Tutorials und Beispiele für Einsteiger?
       - Zusammengetragene Feature-Tabelle die in den jeweiligen Gruppen ausgewertet wird
       - **Realisierung eines Demo-Spiels**
+    - ***Einschätzung MCH***: Objektiver "Vergleich" (z.B. als Tabelle) schwierig. Erfahrungsbericht pro Engine. Im Artikel dann als Absatz pro Engine. 
 
-  - Performance
+  - (LFD 2) Performance
     - FPS unter verschiedenen Bedienungen und Plattformen
     - Speicherverbrauch
     - Ladezeiten
@@ -213,9 +216,10 @@ weight = 400
       - Min, Max, Avg FPS
       - Automatisierter Durchlauf des Spiels als Benchmark
       - FPS unter ähnlichen Bedingungen, Ladezeiten, Speicherverbrauch (RAM/CPU) und plattformübergreifende Leistung.
-      - FPS, Renderzeit, Ladezeit, Texturauflösung, High Poly Modelle, Partikelsysteme, Physics, Lighting    
+      - FPS, Renderzeit, Ladezeit, Texturauflösung, High Poly Modelle, Partikelsysteme, Physics, Lighting 
+    - ***Einschätzung MCH***: Gut als objektiver Vergleich mit Vergleichstabelle realisierbar. Vorschläge, was getestet wird, muss in Game-Konzept eingearbeitet sein.
 
-  - Programmiersprache, Programmierumgebung und Tooling (inkl. Source Control)
+  - (LFD 3) Programmiersprache, Programmierumgebung und Tooling (inkl. Source Control)
     - Erlernbarkeit / Lernkurve
     - Wie einfach ist der Einstieg
     - Wie vergleichen?
@@ -237,10 +241,10 @@ weight = 400
       - Schwierig: Unreal Blueprints oder C++ als Vergleich verwenden?
       - Code testen???
       - Programmieren, GDScript vs C#, Online Recherche    
-
+    - ***Einschätzung MCH***: Objektiver "Vergleich" (z.B. als Tabelle) schwierig. Erfahrungsbericht pro Engine. Im Artikel dann als Absatz pro Engine. 
 
 - Von 2 Gruppen genannt
-  - Grafikqualität
+  - (LFD 4) Grafikqualität
     - Qualität der Engines unter verschiedenen Bedingungen.
     - Standard-Licht und Schatten-Effekte
     - Partikelsysteme
@@ -249,16 +253,35 @@ weight = 400
     - Wie vergleichen?
       - Wie viele Einstellungsmöglichkeiten gibt es, Schöne Scene bauen
       - Standardmäßige Licht- und Schatteneffekte, Partikelsysteme, Postprocessing. Teste die visuelle
+    - ***Einschätzung MCH***: Gut als objektiver Vergleich mit Vergleichstabelle realisierbar. Vorschläge, was getestet wird, muss in Game-Konzept eingearbeitet sein.      
 
 - Von 1 Gruppe genannt
-  - Unterstützte Plattformen
+  - (LFD 5) Unterstützte Plattformen
     - VR/AR Headsets
     -  Smartphones
     - Spielekonsolen
     - PC
     - Wie vergleichen?
       - Recherche über die jeweilige Engine
+   - ***Einschätzung MCH***: Gut als objektiver Vergleich mit Vergleichstabelle realisierbar. Ergebnis muss nicht gemessen werden, sondern kann aus Engine-Doku/per Webrecherche ermittelt werden.
 
-  - Rentabilität/Kosten
+
+  - (LFD 6) Rentabilität/Kosten
     - Wie vergleichen?
       - Welche Lizenzmodelle bieten die beste langfristige Flexibilität? Wann lohnt sich Pay per use im Vergleich zu Pay per sale?
+    - ***Einschätzung MCH***: Kann in einem kurzen Absatz als Vergleich zwischen Unity und Unreal erfolgen. Erfordert keine aufwändigen Messungen - Webrecherche sollte ausreichen.
+
+- Von MCH eingefügt
+  - (LFD 7) Character-Animation -> Ins Game-Konzept einarbeiten:
+    - Einfügen eines animierten Characters mit drei Animationen (Idle, Walk, Jump) aus Stock-Quelle (z. B. Mixamo). Kein fertiger Engine-spezifischer Prefab.
+    - Verknüpfen der Animationssequenzen mit interaktiven Triggern (Benutzereingabe). 
+    - Übergang zwischen Animationssequenzen (Fading)
+    - Extras:
+      - Inverse Kinematik, um Füße auf nicht-ebenem Untergrund passgenau zu positionieren
+      - Getrennte Animationssequenzen für Unter- und Oberkörper (Unterkörper: Fortbewegung; Oberkörper: Waffen-handling, Ausrichtung auf Targets, ...)
+    - Vergleich: Pro Engine individuell Beschreibung, wie die Realisierung erfolgte. Nennung der Features, die die Engine zur Realisierung bietet (z. B. State-Machines in Unity). Individuelle Einschätzung des Realisierungsaufwandes (einfach..aufwändig). Individuelle Einschätzung der Bedien- und Erlernbarkeit der Features (leicht..schwer)
+
+
+
+
+

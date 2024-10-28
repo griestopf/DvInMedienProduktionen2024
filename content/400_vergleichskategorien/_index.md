@@ -281,7 +281,14 @@ weight = 400
       - Getrennte Animationssequenzen für Unter- und Oberkörper (Unterkörper: Fortbewegung; Oberkörper: Waffen-handling, Ausrichtung auf Targets, ...)
     - Vergleich: Pro Engine individuell Beschreibung, wie die Realisierung erfolgte. Nennung der Features, die die Engine zur Realisierung bietet (z. B. State-Machines in Unity). Individuelle Einschätzung des Realisierungsaufwandes (einfach..aufwändig). Individuelle Einschätzung der Bedien- und Erlernbarkeit der Features (leicht..schwer)
 
-
-
+  - (LFD 7) Physics
+    - Untersuchte Features
+      - Starrkörper-Simulation
+      - Mit physikalischen Eigenschaften ausgestattete Teilnehmer
+      - Keine Fahrzeugsimulation
+      - Keine Ragdolls
+    - Vergleichen
+      - Effizienz der Bedienung
+      - Feature-Umfang
 
 

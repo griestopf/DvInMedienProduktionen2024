@@ -30,6 +30,30 @@ weight = 10
   - mch: Priolisten vereinheitlichen
   - Pro Gruppe: Für eigene hoch priorisierte Kategorien: Wie könnte ein Vergleich dieser Kategorie in einem Game durchgeführt werden?
 
+## 21. Okt
+- Vergleichskategorien zusammengeführt
+- Hausaufgabe
+  - Gamekonzept-Teile erarbeiten
+  - Assets finden
+
+## 28. Okt
+- Gamekonzept-Teile der Gruppen gesichtet
+- ZIEL ist es, am 4. November ein Gamekonzept zu haben, mit dem jede Gruppe in der jeweiligen Engine ein Besipiel-Game implementieren kann. Dabei sollen die entstehenden Games möglichst vergleichbar sein. Daher:
+- Hausaufgabe
+  - Gamekonzept-Teile präzisieren, gerne auch durch Bilder
+  - Assets finden und festlegen
+  - Gruppe 1 ("Explosionen")
+    - Assets für Modelle und ggf. Explosionen (animierte Texturen?) finden und festlegen, ansonsten visuelle Beispiele für Effekte finden
+    - Ggf. Vorschläge ausdünnen und auf Redundanz prüfen (Vermeiden, gleichartige Dinge ohne neue Erkenntnisse im Bezug auf Engine-Unterstützung mehrfach implementieren zu müssen)
+  - Gruppe 2 ("Character")
+    - Animations- und Character Assets raussuchen und fixieren
+    - Abgleichen, ob damit Game-Mechanik-Konzepte von Gruppe 3 und 1 vollständig umsetzbar sind
+  - Gruppe 3 ("World")
+    - Integrierbarkeit des derzeitigen KOnzeptes mit Ideen aus Gruppe 1 überprüfen
+    - Ggf. eigene Vorschläge ausdünnen und auf Redundanz prüfen (Vermeiden, gleichartige Dinge ohne neue Erkenntnisse im Bezug auf Engine-Unterstützung mehrfach implementieren zu müssen)
+    - World-building Assets fixieren und abgleichen, ob bislang im Raum stehende Konzepte damit umsetzbar sind.
+
+
 <!--
 ## 14. Okt Vergleichskategorien: Wie vergleichen? Arbeit in Gruppen 
 

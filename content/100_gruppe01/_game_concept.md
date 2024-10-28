@@ -1,3 +1,11 @@
++++
+title = 'Gruppe 01'
+date = 2024-09-28T15:40:23+02:00
+draft = false
+weight = 100
+
++++
+
 # Game Concept
 - Explosions!
 - Labyrinth Wände kaputt machen um zum Ziel zu kommen

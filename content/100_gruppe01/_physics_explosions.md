@@ -8,31 +8,49 @@ weight = 100
 
 # Physics Explosions
 ## Hindernisse
+
+### Chris
+
 - Explosive Barrels
 	- Wenn Spieler(in) Barrel kollidiert, explodiert Barrel in viele kleine Teile die mit der Welt kollidiert aber nicht den oder die Spielerin behindert
 	- Player verliert leben bei Kollision
+
+### Daniel
+
 - Wrecking Ball
 	- Schwingt physics based hin und her, wie ein Pendulum
 	- Player verliert Leben bei Kollision
-	- Explodiert bei Kollision mit Player
-- Wall
-	- Bei Kollision Crumble und verliert leben
+	- Explodiert bei Kollision mit Player (optional)
+
+### Emil
+
 - Piston
 	- Schiebt Player in Hindernis (zur Seite oder schleudert in die Luft)
+- Ice Floor / Öl
+	- Slippery Slope
+	- Verögert das Wechseln der Linie
+
+## Random Event
+
+### Ali
+
+- Fog
+	- Sicht verschlechtert -> schwierig Hindernisse zu erkennen
+- Suicide Drone
+	- zzzzzz Boom Leben weg
+
+### Chris
+
+Wenn Player stirbt => BOOOM! (optional)
+
+## Raus:
+- Lava River
+	- Instant Death
+- Wall
+	- Bei Kollision Crumble und verliert leben
 - FIREBALL!
 	- wird auf Player geschossen
 	- Player verliert Leben bei Kollision
 	- EXPLOSION!
-- Lava River
-	- Instant Death
-- Ice Floor
-	- Slippery Slope
-## Random Event
-- Sandstorm/Fog whatever
-	- Sicht verschlechtert -> schwierig Hindernisse zu erkennen
 - Sharknado/Meteor Storm
 	- Num Num/Boom Boom Leben weg
-- Suicide Drone
-	- zzzzzz Boom Leben weg
-
-Wenn Player stirbt => BOOOM!

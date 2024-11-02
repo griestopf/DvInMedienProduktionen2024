@@ -14,6 +14,7 @@ weight = 100
 - Explosive Barrels
 	- Wenn Spieler(in) Barrel kollidiert, explodiert Barrel in viele kleine Teile die mit der Welt kollidiert aber nicht den oder die Spielerin behindert
 	- Player verliert leben bei Kollision
+	- [Asset](https://sketchfab.com/3d-models/radioactive-barrel-scifi-cylinder-72c6a3ebddbd435f895541d95266eeee)
 
 ### Daniel
 
@@ -41,7 +42,8 @@ weight = 100
 
 ### Chris
 
-Wenn Player stirbt => BOOOM! (optional)
+- Wenn Player stirbt => BOOOM! (optional)
+- [Asset](https://www.patreon.com/posts/godot-vfx-easy-93683992)
 
 ## Raus:
 - Lava River

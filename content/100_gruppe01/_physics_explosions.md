@@ -37,6 +37,7 @@ weight = 100
 	- Slippery Slope
 	- Verögert das Wechseln der Linie
 	- [Asset](https://www.blenderkit.com/asset-gallery-detail/9fbca3a2-a45e-444f-b94b-f7123d5c8b72/)
+	- [Asset](https://sketchfab.com/3d-models/simple-ice-floor-c4c6800ad207449d99e18e28c3f48fa1)
 
 ## Random Event
 

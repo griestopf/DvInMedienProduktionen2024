@@ -22,6 +22,10 @@ weight = 100
 	- Schwingt physics based hin und her, wie ein Pendulum
 	- Player verliert Leben bei Kollision
 	- Explodiert bei Kollision mit Player (optional)
+   	- [Asset](https://sketchfab.com/3d-models/wrecking-ball-8d1d430a775d42238c7dba9070d1d1f8)
+   	- [Asset](https://sketchfab.com/3d-models/wrecking-ball-or-demolition-ball-2802dd05e1754bc3b0f040c0c8dcec71)
+   	- [Asset](https://sketchfab.com/3d-models/wrecking-ball-654816fc135b4be8ab5f727372999c64)
+	- [Asset](https://sketchfab.com/3d-models/wrecking-ball-85efda7b683449cbb6cb8e262406922e)
 
 ### Emil
 

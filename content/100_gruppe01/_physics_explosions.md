@@ -28,6 +28,7 @@ weight = 100
 - Piston
 	- Schiebt Player in Hindernis (zur Seite oder schleudert in die Luft)
 	- [Asset](https://sketchfab.com/3d-models/animated-scissor-lift-ced5e2223ec340de9833e44de99180e6)
+	- [Asset](https://sketchfab.com/3d-models/jump-pad-d903282ae1324da5ad6581ce544da592)
 - Ice Floor / Öl
 	- Slippery Slope
 	- Verögert das Wechseln der Linie

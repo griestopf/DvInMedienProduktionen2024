@@ -37,8 +37,12 @@ weight = 100
 
 - Fog
 	- Sicht verschlechtert -> schwierig Hindernisse zu erkennen
+	[Asset](https://www.blenderkit.com/get-blenderkit/f7579b58-a7d0-442a-8f82-84b345b1d32b/)
+	[Asset](https://sketchfab.com/3d-models/nebula-effect-1ef1813fc1e847d58d1f342ddf3ce755)
 - Suicide Drone
 	- zzzzzz Boom Leben weg
+	[Asset](https://sketchfab.com/3d-models/drone-ce248709dea64ec1844e8dd9b614f7c0)
+	[Asset](https://sketchfab.com/3d-models/dron-ad12-578364048a46431c82d937bb06833deb)
 
 ### Chris
 

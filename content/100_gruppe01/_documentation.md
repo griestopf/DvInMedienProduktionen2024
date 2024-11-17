@@ -20,3 +20,12 @@
 - piston
   - der Boden und das Licht muss wech 
 - Fehler bei Strukturen der Pre-Fabs, da Verzeichnisse verschoben wurde
+
+- Level
+	- Der Player bleibt auf der stelle stehen und das level bewegt sich auf ihn zu.
+	- Weitere Strassen spawnen noch nicht. (Work in progress)
+
+- Player
+	- Character import und Animations haben kein problem gehabt.
+	- Für den import des des Chars und Animations wurde der [Character Animation Combiner](https://nilooy.github.io/character-animation-combiner/) verwendet 
+

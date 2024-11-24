@@ -24,8 +24,24 @@
 - Level
 	- Der Player bleibt auf der stelle stehen und das level bewegt sich auf ihn zu.
 	- Weitere Strassen spawnen noch nicht. (Work in progress)
+  - Spawner der Level Module funktioniert
+  - Basic Steuerung implementiert (Springen & WASD)
+    - Musste z Achse locken, damit der Spieler von bewegenden Modulen nicht nach hinten geschoben wird.
 
 - Player
 	- Character import und Animations haben kein problem gehabt.
-	- Für den import des des Chars und Animations wurde der [Character Animation Combiner](https://nilooy.github.io/character-animation-combiner/) verwendet 
+	- Für den import des des Chars und Animations wurde der [Character Animation Combiner](https://nilooy.github.io/character-animation-combiner/) verwendet
+
+- UI
+  - Relativ einfach umgesetzt mit verschiedenen Control Nodes
+  - Score Display
+  - Leben Display
+  - Game Over Display
+
+- Drone
+  - Animations in Godot selbst animiert (war einfach) mit AnimationPlayer
+
+- Volumentric Fog
+  - Eigenen Shader gecoded (UVW Koordinaten wegen 3D)
+
 

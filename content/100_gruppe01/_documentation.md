@@ -31,6 +31,7 @@
 - Player
 	- Character import und Animations haben kein problem gehabt.
 	- Für den import des des Chars und Animations wurde der [Character Animation Combiner](https://nilooy.github.io/character-animation-combiner/) verwendet
+  - Animation Tree mit Blend Space angepasst, da vorherige Implementierung zu Problemen beim PlayerController geführt hat
 
 - UI
   - Relativ einfach umgesetzt mit verschiedenen Control Nodes

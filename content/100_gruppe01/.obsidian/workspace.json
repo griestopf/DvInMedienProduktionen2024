@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "4c2536ff2f20c846",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d0a01ad2fb4b3ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "390d64d2662a095d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_examples.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_examples"
+            }
+          },
+          {
+            "id": "50c32364e5e5448d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_documentation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_documentation"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c81d1c1147e1358c",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec853df392cc6cab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a7ccfa5dc68c83b2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b9b091bb369cf377",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f53209fa861e5081",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f73c42c3cdc545e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "0faa709f2a522081",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c3ebebbeab6fc1a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_physics_explosions.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for _physics_explosions"
+            }
+          },
+          {
+            "id": "1839b1d1165fbe0d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_physics_explosions.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from _physics_explosions"
+            }
+          },
+          {
+            "id": "d038e4bd74fde26d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "279d69030b930780",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_physics_explosions.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of _physics_explosions"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "50c32364e5e5448d",
+  "lastOpenFiles": [
+    "_examples.md",
+    "_game_concept.md",
+    "_documentation.md",
+    "_index.md",
+    "_physics_explosions.md"
+  ]
+}

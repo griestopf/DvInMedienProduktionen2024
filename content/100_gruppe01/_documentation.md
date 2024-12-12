@@ -64,3 +64,24 @@
   - Eigenen Shader gecoded (UVW Koordinaten wegen 3D)
 
 - Die Jolt Engine implementiert
+
+## Ali:
+- Nebel (Custom Shader)
+- Drohne mit eigenerstellen Animationen in Godot 
+
+## Chris:
+- Player Character import mit Animationen
+- Explosion VFX
+- UI zeugs
+
+# Daniel
+- Physics:
+  - Wreckingball
+  - Explodierended Fass
+
+## Emil:
+- Gamelogik:
+  - Roadspawning
+  - Objectspawning
+  - Player Controls
+  - Skybox (Enviroment)

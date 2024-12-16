@@ -47,8 +47,8 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
  	 - Messwerte zusammenfassen und tabellarisch darstellen (***Ü***)
 
 6. Fazit
-   - Stärken/Schwächen der Engine (***G***)
-   - Empfehlungen (***G***)
+   - Stärken/Schwächen der Engine ((***G***) - Stichwortartig erfassen; (***Ü***) Zusammentragen und als Kapitel niederschreiben)
+   - Empfehlungen ((***G***) - Stichwortartig erfassen; (***Ü***) Zusammentragen und als Kapitel niederschreiben)
 
 5. Anhang (***G***)
 

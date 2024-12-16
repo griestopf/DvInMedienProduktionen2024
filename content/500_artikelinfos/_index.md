@@ -55,15 +55,16 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
 
 ## Specs Physik-Benchmark
 
-- Becken mit Kugeln Füllen (eine Kugel pro Sekunde)
+- Becken mit Kugeln Füllen (eine Kugel pro Millisekunde)
 - Abbruch, wenn Frame-Time (Delta) > 100 ms (Framerate <= 10 FPS)
 - Messergebnis: Wieviele Kugeln sind bis dahin instanziiert?
 - World-Aufbau:
 	- Dimension Becken: 20x20 m (Units)
-	- Kugelradius 0.05 m; (Durchmesser 0,1m)
+	- Kugelradius 0.25 m; (Durchmesser 0,5 m)
 	- Kamera-Position über Becken, senkrecht nach unten blickend
 	- Kamera-Öffnungswinkel 60°
 	- Kamera-Abstand so, dass oberer und unterer Beckenrand jewwils am oberen und unteren Bildschirmrand liegen
+   - Renderfenster Full-HD: 1920 x 1080
 
 
 ## Specs Rendering-Benchmark

@@ -44,7 +44,7 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
 	   - Physik(nach u. s. Benchmark)
     - TODO
       - Tests durchführen und Messwerte/Ergebnisse generieren (***G***)
- 	 - Messwerte zusammenfassen und tabellarisch darstellen (***Ü***)
+ 	    - Messwerte zusammenfassen und tabellarisch darstellen (***Ü***)
 
 6. Fazit
    - Stärken/Schwächen der Engine ((***G***) - Stichwortartig erfassen; (***Ü***) Zusammentragen und als Kapitel niederschreiben)

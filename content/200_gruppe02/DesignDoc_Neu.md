@@ -1,5 +1,12 @@
 # Style / Welt
 
+## Brainstorm (aus Dokument Version 1)
+
+Springen, Sliden, Laufen/FRWD Movement, 3<sup>rd</sup> Person, Explosive Attack
+<br/>Sci-fi space style: [Example 1](https://quaternius.com/packs/ultimatespacekit.html), [Example 2](https://quaternius.com/packs/ultimatemodularscifi.html)
+<br/> Weg ist immer gerade, ohne Kurven.
+<br/> Collectibles (?)
+
 Das Spiel wird im Sci-fi space style realisiert.
 Hierfür stehen beispielsweise folgende Asset-Packs zur Verfügung:
 - Ultimate Space Kit
@@ -76,8 +83,8 @@ Die Power-Ups sind für einen vordefinierten Zeitraum aktiviert, kann durch eine
 
 # Misc
 
-- Breakable Wall: Eine Wand die dem Spieler den Weg blockiert und durch Beschuss durchbrochen/zerstört werden kann Gruppe 1 / Wir
-- Curved Slides: Tunnel ähnliche Struktur die man durch sliden und seitlicher Bewegung durchqueren kann
+- ~~Breakable Wall: Eine Wand die dem Spieler den Weg blockiert und durch Beschuss durchbrochen/zerstört werden kann Gruppe 1 / Wir~~
+- ~~Curved Slides: Tunnel ähnliche Struktur die man durch sliden und seitlicher Bewegung durchqueren kann~~
 - Explosive Barrels: Kollision mit Barrel sorgt für Explosion, behindert den Spieler nicht, Bruchstücke interagieren aber mit der Welt Gruppe 1
 - Wrecking Ball: Pendelt seitlich als Abrissbirne hin und her Gruppe 1 / Wir
     - Seitliche Kollision schleudert Spieler aus der Welt (?)

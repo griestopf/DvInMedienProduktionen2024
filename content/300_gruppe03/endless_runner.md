@@ -14,31 +14,31 @@ In dieser Datei werden die Charaktere und Animationen für unser Endless-Runner-
 
 ### Hauptcharakter
 
-![Alien-Soldier-](content\300_gruppe03\Alien_Soldier.png)
+![Alien-Soldier-](Alien_Soldier.png)
 
-![Astra-](content\300_gruppe03\Astra.png)
+![Astra-](Astra.png)
 
-![Crypto-](content\300_gruppe03\Crypto.png)
+![Crypto-](Crypto.png)
 
-![David-](content\300_gruppe03\David.png)
+![David-](David.png)
 
-![Dreyar-](content\300_gruppe03\Dreyar.png)
+![Dreyar-](Dreyar.png)
 
-![Ely_By_K.Atienza-](content\300_gruppe03\Ely_By_K.Atienza.png)
+![Ely_By_K.Atienza-](Ely_By_K.Atienza.png)
 
-![Exo_Grey-](content\300_gruppe03\ExoGrey.png)
+![Exo_Grey-](ExoGrey.png)
 
-![Exo_Red-](content\300_gruppe03\ExoRed.png)
+![Exo_Red-](ExoRed.png)
 
-![Jennifer-](content\300_gruppe03\Jennifer.png)
+![Jennifer-](Jennifer.png)
 
-![Jones-](content\300_gruppe03\Jones.png)
+![Jones-](Jones.png)
 
-![Pirate_By_P.Konstantinov-](content\300_gruppe03\Pirate_By_P. Konstantinov.png)
+![Pirate_By_P.Konstantinov-](Pirate_By_P. Konstantinov.png)
 
-![Vanguard_By_T.Choonyung-](content\300_gruppe03\Vanguard_By_T.Choonyung.png)
+![Vanguard_By_T.Choonyung-](Vanguard_By_T.Choonyung.png)
 
-![Zlorp-](content\300_gruppe03\Zlorp.png)
+![Zlorp-](Zlorp.png)
 
 
 
@@ -48,28 +48,28 @@ Hier sind die verschiedenen Animationen, die wir für das Spiel nutzen können.
 
 ### Laufanimation
 
-![Run_Forward-](content\300_gruppe03\Run_Forward.mp4)
+![Run_Forward-](Run_Forward.mp4)
 
-![Standard_Run-](content\300_gruppe03\Standart_Run.mp4)
+![Standard_Run-](Standart_Run.mp4)
 
-![Medium_Run-](content\300_gruppe03\Medium_Run.mp4)
+![Medium_Run-](Medium_Run.mp4)
 
-![Slow_Run-](content\300_gruppe03\Slow_Run.mp4)
+![Slow_Run-](Slow_Run.mp4)
 
 
 ### Sprunganimation
 
-![Running_Jump](content\300_gruppe03\Running_Jump.mp4)
+![Running_Jump](Running_Jump.mp4)
 
 
 ### Rutschanimation
 
-![Slide](content\300_gruppe03\Slide.mp4)
+![Slide](Slide.mp4)
 
 
 
 ### Tod-Animation
 
-![Tod-Animation](content\300_gruppe03\Falling_Back_Death.mp4)
+![Tod-Animation](Falling_Back_Death.mp4)
 
 

@@ -52,7 +52,7 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
 
 5. Anhang (***G***)
 
-## Zuordnung der Gruppenübergreifenden (***Ü***) Abschnitte
+## Zuordnung der gruppenübergreifenden (***Ü***) Abschnitte
 
 | Abschnitt                                | Gruppe   |
 |------------------------------------------|----------|

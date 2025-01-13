@@ -149,6 +149,8 @@
     - Profiling: Man kann ein Spiel aufzeichnen und im nachhinein nachschauen, wie viele Frames vorhanden waren und wie lange jeder Engine Part pro Frame gedauert hat ![Profiler](content\200_gruppe02\image_Profiler.png)
     - unity unterstütz zudem Visual Scripting. Allerdings wird dieses kaum genutzt. 
 - **Grafikqualität**: 
+- **Character Animation**: 
+    - Es gibt einen Animator mit einer State-Maschine, indem man zwischen den verschiedenen States wechseln kann und Conditionen setzten kann. Zudem kann man einstellen, wie lange der Übergang der Animationen dauert.
 
 - **Gesamteindruck**: Persönliche Einschätzung der Arbeit mit der jeweiligen Engine
 
@@ -159,23 +161,36 @@
 - Benchmarks zur Performance: FPS, Speicherverbrauch, Ladezeiten
 - Grafiktests: Licht- und Schatteneffekte, Partikelsysteme, Postprocessing
 - Tooling: Debugger, Profiler, Version Control
-- Animation und Physics: Umsetzung von Animationen und physikalischen Simulationen
 
 ### 3.2 Messwerte zusammenfassen
 - Präsentation der Ergebnisse in Tabellen und Diagrammen
 - Vergleich der Engines anhand der generierten Daten
 
 ### 3.3 Unterstütze Platformen
-- Desktop: Windows, Linux, Mac OS, 
+- Desktop: Windows, Linux, Mac OS, ARM
 - Mobile: Android, IOS
 - Web: Web Assembly/OpenGL
+- Spielekonsolen: PS4, PS5, X-Box Reihe, Nintendo Switch
+- VR/AR, Hololens, Desktop VR, Mobile VR (Quest)
 
 
 ---
 
 ## 4. Fazit
 - **Stärken und Schwächen** der Engines
+    - Stärken:
+        - Gute Community mit vielen Hilfestellungen
+        - Viele Open Source Ressourcen
+        - Eigener Asset Store mit viele Inhalten
+        - Weitreichende Platformunterstützung
+        - Man kann unter verschiedenen Betriebssystemen entwickeln
+        - Viele verschiedene Tools die die Entwicklung vereinfachen
+    - Schwächen: 
+        - Ragdolls sind umständlich zu implementieren
+        - UI System ist umständlich. 
+
 - **Empfehlungen**: Welche Engine eignet sich für welche Anwendungsfälle?
+    - Unity eignet sich gut für VR und 2D Applikationen. Zudem sind 3D Applikationen möglich, allerdings wird dafür eher Unreal Empfohlen. Wenn die Grafikanforderung Hoch ist, wird meist Unreal verwendet. Für grafisch nicht so aufwenige Spiele kann Unity verwendet werden. 
 
 ---
 

@@ -1,6 +1,6 @@
 +++
 title = 'Gruppe 03_VergleichsKriterien'
-date = 2025-19
+date = 2025-02-19
 draft = false
 weight = 300
 +++

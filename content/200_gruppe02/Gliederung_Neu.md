@@ -16,7 +16,7 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
 
    ## Methodik
 
-   Um die Leistungsfähigkeit und Benutzerfreundlichkeit verschiedener Game Engines zu analysieren, haben wir ein zweigeteiltes Verfahren angewendet. Dieses umfasst sowohl objektive, messbare Tests als auch subjektive Erfahrungsberichte, die während der Entwicklung eines Beispielprojekts gewonnen wurden. Ziel ist es, die Stärken und Schwächen der Engines zu evaluieren und eine fundierte Grundlage für Empfehlungen bereitzustellen.
+   Um die Leistungsfähigkeit und Benutzerfreundlichkeit verschiedener Game Engines zu analysieren, haben wir zwei verschiedene Verfahren angewendet. Dieses umfasst sowohl objektive, messbare Tests als auch subjektive Erfahrungsberichte, die während der Entwicklung eines Beispielprojekts gewonnen wurden. Ziel ist es, die Stärken und Schwächen der Engines zu evaluieren und eine fundierte Grundlage für Empfehlungen bereitzustellen.
 
    - ### Objektive Tests nach Kategorien
 
@@ -42,17 +42,13 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
 
    - ### Entwicklung eines Beispielprojekts: Endless Runner
 
-      Neben den Benchmarks wurde ein Endless-Runner-Spiel entwickelt, um die Engines unter praxisnahen Bedingungen zu testen. Das Projekt umfasst wesentliche Spielelemente wie:
-
-      - Prozedural generierte Levelabschnitte.
-      - Gameplay-Mechaniken wie Laufen, Springen und Hindernisse.
-      - Eine 3D-Welt mit Sci-Fi-Thematik, die Assets und Partikel verwendet.
+      Neben den Benchmarks wurde ein Endless-Runner-Spiel entwickelt, um die Engines unter praxisnahen Bedingungen zu testen. Das Projekt umfasst wesentliche Spielelemente wie prozedural generierte Levelabschnitte und verschiedene Gameplay Mechaniken wie Laufen und Springen
 
       Die Entwicklung des Projekts diente dazu, qualitative Eindrücke über die Benutzerfreundlichkeit, die Arbeitsabläufe und die Lernkurve der jeweiligen Engines zu sammeln. Aspekte wie die Zugänglichkeit der Dokumentation, die Effizienz der Entwicklungsumgebung und die Eignung der Engines für ein prozedurales Spiel wurden hierbei bewertet.
 
    - ### Kombination qualitativer und quantitativer Analyse
 
-      Die gewonnenen Ergebnisse aus den Benchmarks und der Entwicklung des Endless Runners wurden miteinander kombiniert, um eine ganzheitliche Bewertung zu ermöglichen. So konnten sowohl die technische Leistungsfähigkeit als auch die praktischen Vor- und Nachteile der Engines erfasst werden.
+      Die gewonnenen Ergebnisse aus den Benchmarks und der Entwicklung des Endless Runners wurden miteinander kombiniert, um eine ganzheitliche Bewertung zu ermöglichen. Damit konnten sowohl die technische Leitungs, als auch die praktischen Vor- und Nachteile geschickt erfasst werden.
 
       Mit diesem Verfahren wird sicher gesellt, dass die Analyse sowohl fundierte, datenbasierte Einblicke bietet, als auch die Erfahrungen der Teams und der tatsächlichen Entwicklung berücksichtigt.
 
@@ -61,6 +57,11 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
      - Lizenzmodell
 
          Unity bietet verschiedene Lizenzmodelle an, darunter kostenlose und kostenpflichtige Versionen. Eine Runtime-Gebühr wurde angekündigt, jedoch nach massiven Beschwerden der Community wieder verworfen.
+         
+         - Personal, also die kostenfreie Version, ist Ideal für Einsteiger, da selbst kein Geld investiert werden muss und trotz allem die grundlegenden Funktionen wie Echtzeit-Entwicklung, Startbildschirm-Anpassung und der Unity Asset Manager verfügbar sind. 
+         - Die Pro-Version ist ab 1.877€ im Jahr erhältlich und eignet sich für profesionelle Entwickler. Es werden zusätzliche Features wie ein erweiterter LZS-Support und ein größerer Asset Manager angeboten.
+         - Enterprise ist auf große Teams und Firmen ausgerichtet. Diese Version umfasst Pro-Features und zusätzliche Optionen wie Build-Server-Lizenzen und einen vollen Zugriff auf den Quellcode. 
+         - Bei der Industry-Lizenz ist der Fokus auf Unternehmen in spezifischen Branchen gelegt und es werden Branchenspezifische Toolkits angeboten. 
          - ![Tabellenbild 1](/content/200_gruppe02/Tabelle1.png)
          - ![Tabellenbild 2](/content/200_gruppe02/Tabelle2.png)
 
@@ -76,7 +77,7 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
       - Tutorials erleichtern den Einstieg enorm, z. B. beim Partikelsystem:
          - Mit Anleitung war es einfach z. B. ein explodierendes Fass zu erstellen. Ohne Anleitung wäre dies aufgrund der Funktionsvielfalt anspruchsvoller gewesen.
 
-      - Insgesamt beeindruckt Unity durch die enorme Flexibilität und Anpassungsfähigkeit, die jedoch mit einer steileren Lernkurve verbunden ist.
+      - Insgesamt beeindruckt Unity durch die Flexibilität und Anpassungsfähigkeit, die jedoch mit einer steileren Lernkurve verbunden ist.
    - ### Programmierumgebung und Tools
       - Unity verwendet C# als Programmiersprache und unterstützt gängige IDEs wie Visual Studio, Visual Studio Code und Rider.
       - Debugging und Profiling:
@@ -85,7 +86,7 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
       - Visual Scripting wird unterstützt, ist jedoch wenig verbreitet.
    - ### "Grafikqualität"
       - Die Grafikqualität ist stark von den eingesetzten Renderpipelines (URP, HDRP oder Built-in) abhängig.
-      - Besonders bei prozedural generierten Levels, wie im Endless Runner, konnte Unity mit flüssigen Übergängen und hochwertiger Darstellung überzeugen.
+      - Besonders bei prozedural generierten Levels, wie im Endless Runner, konnte Unity mit flüssigen Übergängen und guter Darstellung überzeugen.
    - ### Character Animation
       - Unity bietet einen leistungsstarken Animator mit einer State-Maschine, die Übergänge zwischen Animationen steuert.
       - Übergangszeiten und Bedingungen können einfach angepasst werden.
@@ -102,7 +103,7 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
       - Insgesamt bietet Unity eine moderate Lernkurve mit viel Unterstützung, allerdings erfordert die Vielzahl der Funktionen eine Einarbeitungszeit.
    - ### Probleme & Lösungen, Eigenheiten
       - Import von 3D-Modellen:
-         - Probleme beim Importieren von .blend-Dateien ohne installierten Blender.
+         - Probleme beim Importieren von .blend-Dateien ohne installiertes Blender.
          - Manuelles Extrahieren und Zuweisen von Texturen notwendig.
          - Lösung: Verwendung von .fbx-Dateien für einen reibungslosen Workflow.
 
@@ -154,21 +155,31 @@ Legende: (***Ü***) - Gruppenübergreifender Abschnitt. (***G***) - von jeder Gr
     (***Ü***) Zusammentragen und als Kapitel niederschreiben)
    - Empfehlungen ((***G***) - Stichwortartig erfassen; 
    - Unity:
-      - Ideal für VR und 2D-Anwendungen: 
+      - Spieleentwicklung
+         - 2D Spiele und VR Anwendungen: Unity hat sich in der 2D-Spieleentwicklung und bei VR Anwenungen besonders gut durchgesetzt und bietet hier starke Unterstützung.
+         - 3D Spiele: 3D-Entwicklungen sind möglich, können allerdings bei grafisch sehr anspruchsvollen Spielen nicht mit anderen Engines mithalten.
+      - Lern und Bildungstools
+         - Durch die starke Community mit vielen hilfreichen Tools, Addons und Tutorials eignet sich Unity hervorragend um sowohl scripting zu lernen, als auch die direkt Auswirkungen zu beobachten.
+      - Anwendungen und Tools
+         - Unity kann gut für andere Anwendungen und Tools verwendet werden. Zudemm werden viele verschiedene Platformen unterstützt.
+      - Budgetfreundliche Option:     
+         - Für kleinere oder mittelgroße Projekte mit begrenztem Budget, bei denen eine breite Plattformunterstützung und schnelle Prototypenerstellung benötigt wird, ist Unity eine erstklassige Wahl.
+   - Godot:
+      - Spieleentwicklung 
+         - 2D-Spiele: Godot ist besonders stark in der 2D-Spieleentwicklung. Die Engine bietet eine Fülle von Tools, um 2D-Spiele effizient und effektiv zu erstellen, einschließlich eines visuellen Editors, der die Arbeit mit Sprites, Tilesets und Animationen erleichtert.
+         - 3D-Spiele: Während Godot historisch eher auf 2D-Spiele fokussiert war, hat die 4.3-Version erhebliche Verbesserungen in der 3D-Entwicklung mit sich gebracht. Die Engine bietet nun bessere Rendering-Fähigkeiten, Shader-Unterstützung und eine Vielzahl von Tools, um 3D-Welten zu erschaffen.
+         - Prototyping: Durch die benutzerfreundliche Oberfläche und Skripting-Tools eignet sich Godot hervorragend für das schnelle Prototyping von Spielideen.
 
-         Unity hat sich in diesen Bereichen durchgesetzt und bietet hier starke Unterstützung.
+      - Anwendungen und Tools 
+         - Interaktive Anwendungen: Godot kann für die Entwicklung von interaktiven Anwendungen und Tools verwendet werden, die auf verschiedenen Plattformen laufen, einschließlich Desktop, Mobile und Web.
 
-      - Geeignet für grafisch weniger anspruchsvolle 3D-Spiele: 
-      
-         Während 3D-Entwicklung mit Unity möglich ist, wird Unreal Engine häufig bevorzugt, wenn Spiele eine sehr hohe Grafikqualität erfordern.
-
-      - Budgetfreundliche Option: 
-            
-         Für kleinere oder mittelgroße Projekte mit begrenztem Budget, bei denen eine breite Plattformunterstützung und schnelle Prototypenerstellung benötigt wird, ist Unity eine exzellente Wahl.
+      - Lern- und Bildungstools 
+         - Bildung und Lehre: Godot ist aufgrund seiner Zugänglichkeit und der umfassenden Dokumentation eine großartige Wahl für Bildungseinrichtungen und Lernende, die in die Spielentwicklung einsteigen möchten. Die Engine bietet eine ideale Plattform, um grundlegende Konzepte der Programmierung und Spieleentwicklung zu erlernen.
 
    - Empfehlung im Vergleich:
-      
-      Für Projekte, die höchste Anforderungen an Grafik stellen, wie realistische Simulationen oder AAA-Titel, könnte Unreal Engine die bessere Wahl sein. Für Projekte mit mittlerer bis niedriger Grafikqualität, besonders bei kleineren Teams, spielt Unity seine Stärken aus. 
+      - Unity kann besonders gut für 2D Spiele oder VR-Anwendungen empfohlen werden. Auch 3D-Entwicklungen sind möglich. Diese können aber bei grafisch anspruchsvollen Spielen nicht mit anderen Engines mithalten. Auch Erwähnenswert ist die starke Community, die mit verschiedensten Tools, Addons und Tutorials die Spieleentwicklung enorm erleichtern. Zudem ist Unity eine budgetfreundliche Option die zudem eine breite Plattformunterstützung bietet.
+      - Auch Godot ist besonders stark in der 2D-Spieleentwicklung und bietet eine großartige Auswahl von Tools um Spiele effizient zu entwickeln. zudem gibt es einen visuellen Editor, der die Arbeit mit Sprites und Animationen vereinfacht. Besonders hervorzuheben ist das Prototyping, das in Godot hervorragend realisiert werden kann.
+      - 
    
    
    (***Ü***) Zusammentragen und als Kapitel niederschreiben) STILL TODO

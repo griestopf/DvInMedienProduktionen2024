@@ -130,72 +130,133 @@ Die Engine bietet eine Vielzahl an Tools und Funktionen, die jedoch mit einer ge
 ## Unreal
 
 
-## Facts über Engine
-Die Unreal Engine (UE), derzeit in Version 5 verfügbar, ist eine der führenden Spiele-Engines mit Schwerpunkt auf High-End-Rendering und professioneller Funktionalität. Sie unterstützt Plattformen wie PC, Konsolen, Mobile und VR/AR und bietet fortschrittliche Tools wie Lumen (Global Illumination) und Nanite (Virtualized Geometry). Dank eines umfangreichen Ökosystems ist sie eine bevorzugte Wahl für AAA-Titel und Indie-Projekte.
+## Überblick
+Die Unreal Engine 5 (UE5), entwickelt von Epic Games, ist eine der leistungsstärksten Spiele-Engines auf dem Markt. Sie ist bekannt für ihre beeindruckenden High-End-Rendering-Fähigkeiten und professionellen Tools, die von AAA-Studios und Indie-Entwicklern gleichermaßen genutzt werden. UE5 unterstützt eine Vielzahl von Plattformen, darunter PC, Konsolen, mobile Geräte sowie VR/AR. Zu den herausragenden Features gehören:
 
+- **Lumen:** Dynamische globale Beleuchtung in Echtzeit.
+- **Nanite:** Virtualisierte Geometrie, die hochdetaillierte Umgebungen effizient darstellt.
+- **Chaos Physics:** Fortschrittliche Physik-Engine für realistische Simulationen.
 
-
-## Lizenzmodell
-- **Kosten:** Die Engine ist kostenfrei nutzbar. Epic Games erhebt eine Umsatzbeteiligung von 5 % ab einem Jahresumsatz von 1 Mio. USD pro Titel. 
-- **Flexibilität:** Besonders für Indie-Entwickler attraktiv, da keine Vorabkosten anfallen. Größere Studios können individuelle Verträge aushandeln.
-- **Pay-per-Sale-Ansatz:** Ideal für kleinere Projekte mit niedrigem Risiko und geringem Budget.
-
-
-
-## Verbreitung
-- **Industrieanwendung:** Unreal ist stark in der AAA-Entwicklung vertreten (z. B. Fortnite, Gears of War).
-- **Community:** Große und aktive Entwickler-Community mit Ressourcen wie Foren, Discord-Gruppen, YouTube-Tutorials und Online-Kursen.
-- **Marktplatz:** Umfangreiche Bibliothek an Plug-ins, Assets und Tools, die stetig wächst.
-
-
-
-## Benutzerfreundlichkeit, Usability
-- **Editor-Oberfläche:** Modularer Aufbau mit intuitiven Panels (Content Browser, Details Panel). Für Neulinge komplex, aber logisch strukturiert.
-- **Blueprints:** Visuelles Scripting erleichtert den Einstieg und ist ideal für Prototyping.
-- **Workflow:** Iteratives Arbeiten durch Hot Reload und Projektvorlagen (FPS, Third Person etc.) gut unterstützt.
-- **Lernressourcen:** Umfangreiche Tutorials, Dokumentationen und Beispielprojekte erleichtern den Einstieg.
-
-
-
-## Programmierumgebung, Tools
-- **Programmiersprachen:** Unterstützung für C++ und Blueprints. Blueprints ermöglichen schnelle Prototypen, während C++ mehr Kontrolle und Performance bietet.
-- **IDE-Unterstützung:** Visual Studio, Rider und Xcode sind vollständig integriert.
-- **Debugging und Profiling:** Tools wie Unreal Insights und eingebaute Debug-Funktionen in Blueprints erleichtern die Fehlerbehebung.
-- **Teamarbeit:** Unterstützung für Version Control-Systeme wie Git und Perforce. Herausforderungen bestehen bei der Arbeit mit binären Assets (UAssets).
-
-
-
-## Grafikqualität
-- **High-End-Rendering:** Unreal setzt Maßstäbe mit Features wie Lumen und Nanite (UE5). Volumetrische Effekte, Deferred Rendering und PBR sind bereits in UE4 auf hohem Niveau.
-- **Postprocessing:** Umfassendes Set an Effekten wie Bloom, Depth of Field und Motion Blur für kinoähnliche Ergebnisse.
-- **Skalierbarkeit:** Einstellbare Qualität ermöglicht den Einsatz auf schwächerer Hardware.
+Offizielle Website: [Unreal Engine](https://www.unrealengine.com)
 
 ---
 
-## Character Animation
-- **Animationssystem:** Umfassend mit State Machines, Inverse Kinematik und Layered Animation. 
-- **Beispielprojekt:** Animationen wie Idle, Walk und Jump können einfach in einem Animation Blueprint organisiert werden.
-- **Extras:** Tools wie Full Body IK (UE5) und Layered Animation ermöglichen präzise Steuerung.
-- **Einarbeitung:** Import von Assets (z. B. Mixamo) ist unkompliziert. Komplexere Animationen erfordern jedoch etwas Übung.
+## Lizenzmodell
+- **Kosten:** Die Unreal Engine ist grundsätzlich kostenlos nutzbar. Epic Games erhebt jedoch eine Umsatzbeteiligung von 5 %, wenn der Jahresumsatz eines Titels 1 Million USD überschreitet.
+- **Epic Games Store:** Für Umsätze, die über den Epic Games Store generiert werden, entfällt die Lizenzgebühr.
+- **Flexibilität:** Besonders attraktiv für Indie-Entwickler, da keine Vorabkosten anfallen. Größere Studios können individuelle Verträge aushandeln.
 
+Weiterführende Informationen: [Unreal Engine Lizenzmodell](https://www.unrealengine.com/en-US/release)
 
+---
 
-## Lernkurve
-- **Schwierigkeit:** Unreal bietet eine Fülle an Features, was den Einstieg komplex macht. 
-- **Blueprints:** Ideal für Einsteiger ohne Programmierkenntnisse. Für fortgeschrittene Entwickler ist das Verständnis von C++ und UE-spezifischen APIs (UObjects, Gameplay Framework) notwendig.
-- **Ressourcen:** Tutorials, Beispielprojekte und die umfangreiche Dokumentation machen die Engine zugänglicher.
+## Verbreitung und Community
+Die Unreal Engine ist sowohl in der AAA-Spieleentwicklung als auch bei Indie-Entwicklern weit verbreitet. Beispiele für bekannte Spiele sind **Fortnite**, **Gears of War** und **Final Fantasy VII Remake**. 
 
+### Community und Ressourcen:
+- **Foren und Discord-Gruppen:** Sehr aktiv und hilfreich für Problemlösungen und Feedback.
+- **YouTube-Tutorials und Online-Kurse:** Eine große Auswahl an kostenlosen und kostenpflichtigen Lernressourcen.
+- **Unreal Marketplace:** Umfangreiche Bibliothek an Plugins, Assets und Tools.
 
+Nützliche Links:
+- [Unreal Engine Forum](https://forums.unrealengine.com)
+- [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace)
+- [YouTube-Tutorials für UE5](https://www.youtube.com/results?search_query=unreal+engine+5+tutorial)
 
-## Probleme & Lösungen, Eigenheiten
-- **Binäre Assets:** Merge-Konflikte bei UAssets erschweren die Zusammenarbeit in Teams. Epic arbeitet mit Features wie Virtual Assets an Verbesserungen.
-- **Hardware-Anforderungen:** Für High-End-Rendering wie Lumen und Nanite sind leistungsstarke GPUs erforderlich. Mobile-Geräte erfordern Optimierungen.
-- **Komplexität:** Die Vielfalt an Features kann Neulinge überfordern, jedoch bieten Blueprints und Projektvorlagen einen guten Einstieg.
+---
 
+## Benutzerfreundlichkeit und Usability
 
+### Editor-Oberfläche
+Die Editor-Oberfläche der Unreal Engine ist modular aufgebaut und bietet intuitive Panels wie den Content Browser, das Details Panel und den Blueprint Editor. Sie ist mächtig und anfangs etwas überwältigend, aber logisch strukturiert.
+
+### Blueprints
+- **Visuelles Scripting-System**, das ohne Programmierkenntnisse genutzt werden kann.
+- Ideal für Prototyping und einfache Mechaniken.
+- **Empfohlener Einstieg:** [Blueprint Visual Scripting Dokumentation](https://docs.unrealengine.com/5.0/en-US/blueprints-visual-scripting-in-unreal-engine/)
+
+### Workflow
+- **Hot Reload:** Änderungen im Code können sofort im Editor getestet werden.
+- **Projektvorlagen:** FPS, Third Person, Side Scroller und weitere Vorlagen erleichtern den Einstieg.
+
+---
+
+## Programmierumgebung und Tools
+- **Programmiersprachen:** Unterstützung für C++ und Blueprints.
+- **IDE-Integration:** Nahtlose Integration mit Visual Studio, Rider und Xcode.
+- **Debugging und Profiling:** Tools wie **Unreal Insights** und eingebaute Debug-Funktionen in Blueprints.
+
+### Teamarbeit
+- **Version Control:** Unterstützung für Git und Perforce.
+- **Herausforderungen:** Bei binären Assets (UAssets) können Merge-Konflikte auftreten.
+
+Nützliche Tools:
+- [Unreal Insights](https://docs.unrealengine.com/5.0/en-US/unreal-insights-overview-in-unreal-engine/)
+
+---
+
+## Grafikqualität
+- **Lumen und Nanite:** Revolutionieren das Rendering und ermöglichen realistische Beleuchtung und detaillierte Umgebungen.
+- **Post-Processing:** Effekte wie Bloom, Depth of Field und Motion Blur.
+- **Skalierbarkeit:** Einstellbare Qualität für verschiedene Hardware-Anforderungen.
+
+### Beispiel:
+Eine fotorealistische Landschaft mit Nanite und Lumen:
+- [Landschaftserstellung mit Nanite und Lumen](https://www.youtube.com/watch?v=1NKOiLrX4r8)
+
+---
+
+## Charakteranimation
+- **Animationssystem:** Umfassend mit State Machines, Inverse Kinematik und Layered Animation.
+- **Tools:** Full Body IK (UE5) und Layered Animation ermöglichen präzise Steuerung.
+- **Asset-Import:** Unkomplizierter Import von Animationen, z. B. von Mixamo.
+
+### Nützliche Ressourcen:
+- [Unreal Engine Animation Dokumentation](https://docs.unrealengine.com/5.0/en-US/animation-blueprint-in-unreal-engine/)
+
+---
+
+## Lernkurve und Einstieg
+- **Schwierigkeit:** Der Einstieg kann komplex sein, besonders wegen der Vielzahl an Funktionen.
+- **Blueprints:** Ideal für Einsteiger ohne Programmierkenntnisse.
+- **C++ und APIs:** Für fortgeschrittene Entwickler wichtig, um das volle Potenzial der Engine auszuschöpfen.
+- **Ressourcen:** Umfangreiche Tutorials, Beispielprojekte und die offizielle Dokumentation.
+
+### Empfehlenswerte Tutorials:
+- [Endless Runner Tutorial (YouTube)](https://www.youtube.com/results?search_query=unreal+engine+endless+runner+tutorial)
+- [Offizielle Unreal Engine Dokumentation](https://docs.unrealengine.com)
+
+---
+
+## Erfahrungsbericht: Erstellung eines Endless Runners
+
+### Projektplanung und Konzeptualisierung
+- **Spielmechanik:** Der Spieler läuft automatisch und muss durch Springen oder Ducken Hindernisse überwinden.
+- **Thema und Design:** Festlegung des grafischen Stils, z. B. futuristisch oder Cartoon-artig.
+
+### Erstellung der Spielmechanik
+- **Blueprints:** Ideal, um die grundlegende Bewegung und Kollisionsabfragen zu realisieren.
+- **Level-Streaming:** Endlose Level durch modulare Abschnitte und zufälliges Spawn von Hindernissen.
+
+### Beispiel-Assets und Ressourcen:
+- [Endless Runner Starter Kit](https://www.unrealengine.com/marketplace/en-US/product/endless-runner-starter-kit)
+- [Beispielprojekt: Side Scroller](https://docs.unrealengine.com/5.0/en-US/side-scroller-template-in-unreal-engine/)
+
+---
+
+## Probleme, Lösungen und Eigenheiten
+- **Binäre Assets:** Merge-Konflikte bei UAssets können die Zusammenarbeit in Teams erschweren.
+- **Hardware-Anforderungen:** Für Lumen und Nanite sind leistungsstarke GPUs erforderlich.
+- **Komplexität:** Die Vielfalt an Features kann Neulinge überfordern.
+
+### Lösungen:
+- **Virtual Assets** zur Verbesserung von Versionskontrollproblemen.
+- **Performance-Optimierungen** für mobile Geräte, z. B. durch Anpassungen in den Rendering-Einstellungen.
+
+---
 
 ## Gesamteindruck
-Unreal Engine überzeugt durch herausragende Grafik, vielseitige Tools und professionelle Funktionalität. Trotz der anfänglichen Komplexität wird der Einstieg durch umfangreiche Tutorials, Blueprints und Community-Ressourcen erleichtert. Die Engine ist besonders für ambitionierte Projekte geeignet, bietet aber auch für kleinere Vorhaben eine solide Grundlage.
+Die Unreal Engine überzeugt durch ihre herausragende Grafikqualität, vielseitige Tools und professionelle Funktionalität. Trotz der anfänglichen Komplexität erleichtern umfangreiche Tutorials, Blueprints und Community-Ressourcen den Einstieg. Besonders für ambitionierte Projekte geeignet, bietet die Engine aber auch eine solide Grundlage für kleinere Vorhaben.
 
 
 

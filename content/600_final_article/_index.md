@@ -139,7 +139,7 @@ Die Unreal Engine 5 (UE5), entwickelt von Epic Games, ist eine der leistungsstä
 
 Offizielle Website: [Unreal Engine](https://www.unrealengine.com)
 
----
+
 
 ## Lizenzmodell
 - **Kosten:** Die Unreal Engine ist grundsätzlich kostenlos nutzbar. Epic Games erhebt jedoch eine Umsatzbeteiligung von 5 %, wenn der Jahresumsatz eines Titels 1 Million USD überschreitet.
@@ -148,7 +148,7 @@ Offizielle Website: [Unreal Engine](https://www.unrealengine.com)
 
 Weiterführende Informationen: [Unreal Engine Lizenzmodell](https://www.unrealengine.com/en-US/release)
 
----
+
 
 ## Verbreitung und Community
 Die Unreal Engine ist sowohl in der AAA-Spieleentwicklung als auch bei Indie-Entwicklern weit verbreitet. Beispiele für bekannte Spiele sind **Fortnite**, **Gears of War** und **Final Fantasy VII Remake**. 
@@ -163,7 +163,7 @@ Nützliche Links:
 - [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace)
 - [YouTube-Tutorials für UE5](https://www.youtube.com/results?search_query=unreal+engine+5+tutorial)
 
----
+
 
 ## Benutzerfreundlichkeit und Usability
 
@@ -179,7 +179,7 @@ Die Editor-Oberfläche der Unreal Engine ist modular aufgebaut und bietet intuit
 - **Hot Reload:** Änderungen im Code können sofort im Editor getestet werden.
 - **Projektvorlagen:** FPS, Third Person, Side Scroller und weitere Vorlagen erleichtern den Einstieg.
 
----
+
 
 ## Programmierumgebung und Tools
 - **Programmiersprachen:** Unterstützung für C++ und Blueprints.
@@ -193,7 +193,7 @@ Die Editor-Oberfläche der Unreal Engine ist modular aufgebaut und bietet intuit
 Nützliche Tools:
 - [Unreal Insights](https://docs.unrealengine.com/5.0/en-US/unreal-insights-overview-in-unreal-engine/)
 
----
+
 
 ## Grafikqualität
 - **Lumen und Nanite:** Revolutionieren das Rendering und ermöglichen realistische Beleuchtung und detaillierte Umgebungen.
@@ -204,7 +204,7 @@ Nützliche Tools:
 Eine fotorealistische Landschaft mit Nanite und Lumen:
 - [Landschaftserstellung mit Nanite und Lumen](https://www.youtube.com/watch?v=1NKOiLrX4r8)
 
----
+
 
 ## Charakteranimation
 - **Animationssystem:** Umfassend mit State Machines, Inverse Kinematik und Layered Animation.
@@ -214,7 +214,7 @@ Eine fotorealistische Landschaft mit Nanite und Lumen:
 ### Nützliche Ressourcen:
 - [Unreal Engine Animation Dokumentation](https://docs.unrealengine.com/5.0/en-US/animation-blueprint-in-unreal-engine/)
 
----
+
 
 ## Lernkurve und Einstieg
 - **Schwierigkeit:** Der Einstieg kann komplex sein, besonders wegen der Vielzahl an Funktionen.
@@ -226,7 +226,7 @@ Eine fotorealistische Landschaft mit Nanite und Lumen:
 - [Endless Runner Tutorial (YouTube)](https://www.youtube.com/results?search_query=unreal+engine+endless+runner+tutorial)
 - [Offizielle Unreal Engine Dokumentation](https://docs.unrealengine.com)
 
----
+
 
 ## Erfahrungsbericht: Erstellung eines Endless Runners
 
@@ -242,7 +242,7 @@ Eine fotorealistische Landschaft mit Nanite und Lumen:
 - [Endless Runner Starter Kit](https://www.unrealengine.com/marketplace/en-US/product/endless-runner-starter-kit)
 - [Beispielprojekt: Side Scroller](https://docs.unrealengine.com/5.0/en-US/side-scroller-template-in-unreal-engine/)
 
----
+
 
 ## Probleme, Lösungen und Eigenheiten
 - **Binäre Assets:** Merge-Konflikte bei UAssets können die Zusammenarbeit in Teams erschweren.
@@ -253,7 +253,7 @@ Eine fotorealistische Landschaft mit Nanite und Lumen:
 - **Virtual Assets** zur Verbesserung von Versionskontrollproblemen.
 - **Performance-Optimierungen** für mobile Geräte, z. B. durch Anpassungen in den Rendering-Einstellungen.
 
----
+
 
 ## Gesamteindruck
 Die Unreal Engine überzeugt durch ihre herausragende Grafikqualität, vielseitige Tools und professionelle Funktionalität. Trotz der anfänglichen Komplexität erleichtern umfangreiche Tutorials, Blueprints und Community-Ressourcen den Einstieg. Besonders für ambitionierte Projekte geeignet, bietet die Engine aber auch eine solide Grundlage für kleinere Vorhaben.

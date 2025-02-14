@@ -320,7 +320,23 @@ Es gibt einige Herausforderungen, insbesondere mit der Physics Engine von Godot 
 - Schwächen: 
     - Komplexe Ragdoll-Implementierung
     - UI System ist umständlich
+ 
+      
 #### Unreal 
+
+## Stärken
+
+- **Grafikqualität**: Herausragende Grafik dank Lumen und Nanite, ideal für fotorealistische Umgebungen.  
+- **Performance**: Leistungsstark, besonders für große und komplexe Spielwelten.  
+- **Visual Scripting**: Blueprints ermöglichen schnelles Prototyping ohne Programmierkenntnisse.  
+- **Community und Verbreitung**: Große Entwickler-Community mit vielen Ressourcen.
+  
+## Schwächen
+
+- **Komplexität**: Steile Lernkurve, besonders für Anfänger.  
+- **Hardware-Anforderungen**: Hohe Systemanforderungen für High-End-Rendering.  
+- **Teamarbeit**: Probleme bei der Zusammenarbeit mit binären Assets (UAssets).  
+- **C++-Abhängigkeit**: Für maximale Performance ist C++ erforderlich, was komplexer ist als Blueprints.  
 
 #### Godot
 ##### Stärken 

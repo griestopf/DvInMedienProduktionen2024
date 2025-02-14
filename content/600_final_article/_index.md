@@ -293,17 +293,17 @@ Die Grafikqualität in 3D scheint akzeptabel zu sein, jedoch konnten wir in dies
 Es gibt einige Herausforderungen, insbesondere mit der Physics Engine von Godot 4.3. In unserem Fall, bei der Entwicklung eines kleinen 3D-Spiels, stellte sich heraus, dass die Physics Engine nicht besonders akkurat und performant ist. Diese Schwierigkeiten erforderten zusätzliche Anpassungen und Optimierungen, um die gewünschte Funktionalität zu erreichen. Insgesamt bietet die Godot Engine 4.3 jedoch eine robuste und vielseitige Plattform für Spieleentwickler, die bereit sind, sich in die Engine einzuarbeiten und individuelle Lösungen für spezifische Herausforderungen zu finden. 
 
 
-## Vergleich
+# Vergleich von Unreal Engine, Unity und Godot
 
-  - Testkategorien:
-	 - Unterstützte Plattformen
-	 - Rentabilität/Kosten 
-	 - Performance
-	   - Rendering (nach u. s. Benchmark)
-	   - Physik(nach u. s. Benchmark)
-    - TODO
-      - Tests durchführen und Messwerte/Ergebnisse generieren (***G***)
- 	   - Messwerte zusammenfassen und tabellarisch darstellen (***Ü***)
+| Kategorie                 | Unreal Engine                                     | Unity                                               | Godot                                              |
+|----------------------------|---------------------------------------------------|-----------------------------------------------------|---------------------------------------------------|
+| **Unterstützte Plattformen** | PC, Konsolen, Mobile, VR/AR                        | PC, Konsolen, Mobile, VR/AR                          | Windows, macOS, Linux, Android, iOS, Konsolen      |
+| **Rentabilität/Kosten**     | Kostenfrei bis 1 Mio. USD Jahresumsatz, danach 5 % Umsatzbeteiligung | Personal (kostenlos), Pro ab 1.877 €/Jahr, Enterprise für große Teams | Open-Source, kostenlos (MIT-Lizenz)                |
+| **Performance**             | Noch ausstehend                                    | Noch ausstehend                                     | Noch ausstehend                                     |
+| **Rendering**               | Lumen (Global Illumination), Nanite (Virtualized Geometry), High-End-Rendering | HDRP, URP, Built-in, anpassbare Grafikqualität       | Vulkan-Renderer, moderne Rendering-Technologien    |
+| **Physik**                  | Noch ausstehend                                    | Noch ausstehend                                     | Noch ausstehend                                     |
+
+
 
 ## Fazit
    

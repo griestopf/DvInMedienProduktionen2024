@@ -153,7 +153,8 @@ Die Engine bietet eine Vielzahl an Tools und Funktionen, die jedoch mit einer ge
 
 
 ## Godot
-
+![Godot Endless Runner Image](Godot_ER.png)
+###[WEB-Export](https://schnike.itch.io/space-mouse)
 ### Die Engine
 Die Godot Engine, welches 2014 veröffentlicht wurde, ist eine MIT - lizensierte Open-Source Engine. Die MIT-Lizenz erlaubt es die Software frei zu nutzen, zu modifizieren und zu verteilen, solange der ursprüngliche Lizenztext beibehalten wird. Sie bietet zudem keinen Haftungsausschluss für Schäden. Godot wird von einer aktiven Community sowie einem Kernteam kontinuierlich weiterentwickelt. Godot unterstützt sowohl 2D- als auch 3D-Spieleentwicklung, wobei der Fokus besonders auf der 2D- Performance liegt, allerdings gab es bereits schon wesentliche Fortschritte im 3D - Bereich. Die Engine bietet eine umfassende Plattformunterstützung und erlaubt die Veröffentlichung von Spielen auf Windows, macOS, Linux, Android, iOS und Konsolen. Ein Alleinstellungsmerkmal von Godot ist das integrierte Szenensystem, das Spielelemente hierarchisch organisiert und den Entwicklungsprozess stark vereinfacht.
 
@@ -260,4 +261,8 @@ Unreal Engine überzeugt mit herausragender Grafikqualität, dank moderner Techn
 - **Bildung und Lehre:** Godot ist aufgrund seiner Zugänglichkeit und der umfassenden Dokumentation eine großartige Wahl für Bildungseinrichtungen und Lernende, die in die Spielentwicklung einsteigen möchten. Die Engine bietet eine ideale Plattform, um grundlegende Konzepte der Programmierung und Spieleentwicklung zu erlernen.
 
 ## Anhang
+- [Godot Dokumentation Referenz](https://docs.godotengine.org/de/4.x/index.html)
+- [Godot Endless Runner Referenz](https://gameidea.org/2024/10/01/making-3d-endless-runner-game-part-1/)
+- [Github Godot Benchmark](https://github.com/Schnike/GodotBenchmark)
+- [Godot WEB-Export](https://schnike.itch.io/space-mouse)
 

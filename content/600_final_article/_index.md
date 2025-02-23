@@ -286,8 +286,6 @@ Die Grafikqualität in 3D scheint akzeptabel zu sein, jedoch konnten wir in dies
 Es gibt einige Herausforderungen, insbesondere mit der Physics Engine von Godot 4.3. In unserem Fall, bei der Entwicklung eines kleinen 3D-Spiels, stellte sich heraus, dass die Physics Engine nicht besonders akkurat und performant ist. Diese Schwierigkeiten erforderten zusätzliche Anpassungen und Optimierungen, um die gewünschte Funktionalität zu erreichen. Insgesamt bietet die Godot Engine 4.3 jedoch eine robuste und vielseitige Plattform für Spieleentwickler, die bereit sind, sich in die Engine einzuarbeiten und individuelle Lösungen für spezifische Herausforderungen zu finden. 
 
 ### Referenzen
-- [Godot Dokumentation Referenz](https://docs.godotengine.org/de/4.x/index.html)
-- [Godot Endless Runner Referenz](https://gameidea.org/2024/10/01/making-3d-endless-runner-game-part-1/)
 - [Github Godot Benchmark](https://github.com/Schnike/GodotBenchmark)
 - [Godot WEB-Export](https://schnike.itch.io/space-mouse)
 
@@ -382,3 +380,5 @@ Unreal Engine überzeugt mit herausragender Grafikqualität, dank moderner Techn
 - **Bildung und Lehre:** Godot ist aufgrund seiner Zugänglichkeit und der umfassenden Dokumentation eine großartige Wahl für Bildungseinrichtungen und Lernende, die in die Spielentwicklung einsteigen möchten. Die Engine bietet eine ideale Plattform, um grundlegende Konzepte der Programmierung und Spieleentwicklung zu erlernen.
 
 ## Anhang
+- [Godot Dokumentation Referenz](https://docs.godotengine.org/de/4.x/index.html)
+- [Godot Endless Runner Referenz](https://gameidea.org/2024/10/01/making-3d-endless-runner-game-part-1/)

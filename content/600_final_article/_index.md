@@ -254,21 +254,27 @@ Unreal Engine überzeugt mit herausragender Grafikqualität, dank moderner Techn
     - UI System ist umständlich
  
       
-#### Unreal 
+#### Unreal Engine
+##### Stärken
+- **High-End-Grafik**  
+  Durch Technologien wie Nanite und Lumen ermöglicht die Engine fotorealistische Darstellung und dynamische Beleuchtung für qualitativ hochwertige 3D-Projekte.
+- **Blueprints & C++**  
+  Mit dem visuellen Scripting-System (Blueprints) ist ein schneller Einstieg möglich. Wer mehr Leistung und Flexibilität benötigt, kann auf C++ umsteigen.
+- **Umfangreiche Tools & Integration**  
+  Eine breite Palette an Entwicklertools (z. B. Animation Blueprints, Visual Effects, KI) und die enge Verzahnung mit professionellen Film- und TV-Produktionspipelines machen Unreal vielseitig einsetzbar.
+- **Große Community & AAA-Referenzen**  
+  Dank zahlreicher Foren, Tutorials und Marketplace-Inhalte findet man schnell Lösungen, Beispielcode und Assets. Viele AAA-Studios setzen auf Unreal, was den Bekanntheitsgrad steigert.
 
-## Stärken
+##### Schwächen
+- **Steile Lernkurve**  
+  Die Engine ist sehr mächtig und umfangreich. Einsteiger müssen mit erheblicher Einarbeitungszeit rechnen, besonders bei der C++-Programmierung.
+- **Hohe Systemanforderungen**  
+  Um die Vorteile von Nanite und Lumen auszuschöpfen, wird eine leistungsfähige Hardware vorausgesetzt. Auch der Editor selbst gilt als ressourcenintensiv.
+- **Kein offizieller Web-Export**  
+  Anders als bei Unity oder Godot bietet Epic seit UE4/UE5 keine offizielle Möglichkeit mehr, Projekte direkt für das Web zu exportieren. Externe Lösungen wie Pixel Streaming bieten nur einen begrenzten Ersatz.
+- **Binäre Asset-Dateien (UAssets)**  
+  Diese können in Versionskontrollsystemen zu Konflikten führen, da Merge-Tools häufig nicht mit Binärdateien umgehen können. Für Teamprojekte erfordert das eine durchdachte Arbeitsorganisation.
 
-- **Grafikqualität**: Herausragende Grafik dank Lumen und Nanite, ideal für fotorealistische Umgebungen.  
-- **Performance**: Leistungsstark, besonders für große und komplexe Spielwelten.  
-- **Visual Scripting**: Blueprints ermöglichen schnelles Prototyping ohne Programmierkenntnisse.  
-- **Community und Verbreitung**: Große Entwickler-Community mit vielen Ressourcen.
-  
-## Schwächen
-
-- **Komplexität**: Steile Lernkurve, besonders für Anfänger.  
-- **Hardware-Anforderungen**: Hohe Systemanforderungen für High-End-Rendering.  
-- **Teamarbeit**: Probleme bei der Zusammenarbeit mit binären Assets (UAssets).  
-- **C++-Abhängigkeit**: Für maximale Performance ist C++ erforderlich, was komplexer ist als Blueprints.  
 
 #### Godot
 ##### Stärken 
@@ -297,7 +303,16 @@ Unreal Engine überzeugt mit herausragender Grafikqualität, dank moderner Techn
 #### Unity
 - Unity kann besonders gut für 2D Spiele oder VR-Anwendungen empfohlen werden. Auch 3D-Entwicklungen sind möglich. Diese können aber bei grafisch anspruchsvollen Spielen nicht mit anderen Engines mithalten. Auch Erwähnenswert ist die starke Community, die mit verschiedensten Tools, Addons und Tutorials die Spieleentwicklung enorm erleichtern. Zudem ist Unity eine budgetfreundliche Option die zudem eine breite Plattformunterstützung bietet.
 #### Unreal
-- Unreal Engine überzeugt durch herausragende Grafik, vielseitige Tools und professionelle Funktionalität besonders in der 3D-Umgebung. Trotz der anfänglichen Komplexität wird der Einstieg durch umfangreiche Tutorials, Blueprints und Community-Ressourcen erleichtert. Die Engine ist besonders für ambitionierte Projekte geeignet, bietet aber auch für kleinere Vorhaben eine solide Grundlage.
+##### Spieleentwicklung
+- **High-End-3D-Spiele**: Die Unreal Engine ist besonders für groß angelegte 3D-Projekte mit fotorealistischer Grafik geeignet. Nanite (virtuelle Geometrie) und Lumen (dynamische globale Beleuchtung) sorgen für beeindruckende visuelle Ergebnisse und machen die Engine zum Favoriten bei AAA-Titeln.  
+- **Prototyping größerer Projekte**: Dank Blueprints lassen sich Mechaniken rasch umsetzen, ohne tiefgreifende Programmierkenntnisse. Für komplexe, rechenintensive Funktionen bietet C++ zusätzliche Performance und Flexibilität.
+##### Anwendungen und Tools
+- **Architekturvisualisierung und Simulationen**: Unreal eignet sich hervorragend für interaktive Simulationen oder begehbare Architekturrundgänge. Die hohe Grafikqualität und vielseitigen Physik-Features ermöglichen detailgetreue, immersive Szenen.  
+- **Film- und TV-Produktionen (Virtual Production)**: Die Engine hat sich im Bereich Virtual Production etabliert. Echtzeit-Rendering und Integration mit professionellem Filmequipment schaffen beeindruckende virtuelle Sets.
+##### Lern- und Bildungstools
+- **Blueprints als Einstieg**: Das visuelle Scripting-System erlaubt Einsteigern einen schnellen Zugang zu den Grundmechaniken, ohne sich zunächst in C++ einarbeiten zu müssen.  
+- **Umfangreiche Ressourcen**: Offizielle Dokumentationen, Video-Tutorials und eine große Community bieten zahlreiche Lernmaterialien. Fortgeschrittene Themen wie Shader-Programmierung und Netzwerkfeatures werden ebenfalls detailliert behandelt.  
+- **Community-Projekte**: Zahlreiche Indie-Projekte und GitHub-Repositories liefern praktische Beispiele, um verschiedene Genres und Anwendungsfälle zu erforschen.
 #### Godot
 ##### Spieleentwicklung 
 - **2D-Spiele:** Godot ist besonders stark in der 2D-Spieleentwicklung. Die Engine bietet eine Fülle von Tools, um 2D-Spiele effizient und effektiv zu erstellen, einschließlich eines visuellen Editors, der die Arbeit mit Sprites, Tilesets und Animationen erleichtert.
@@ -312,3 +327,10 @@ Unreal Engine überzeugt mit herausragender Grafikqualität, dank moderner Techn
 
 ## Anhang
 
+#### Unreal:
+1. [Unreal Engine 5 – Offizielle Dokumentation](https://docs.unrealengine.com/5.0/en-US/)  
+2. [Unreal Engine Lizenzmodell](https://www.unrealengine.com/en-US/release)  
+3. [Blueprint Visual Scripting](https://docs.unrealengine.com/5.0/en-US/blueprints-visual-scripting-in-unreal-engine/)  
+4. [Nanite in Unreal Engine 5](https://docs.unrealengine.com/5.0/en-US/nanite-in-unreal-engine/)  
+5. [Lumen in Unreal Engine 5](https://docs.unrealengine.com/5.0/en-US/lumen-in-unreal-engine/)  
+6. [Pixel Streaming Informationen (Community Plugin)](https://docs.unrealengine.com/5.0/en-US/pixel-streaming-in-unreal-engine/)

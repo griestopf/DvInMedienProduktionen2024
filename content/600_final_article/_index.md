@@ -204,16 +204,32 @@ Die Grafikqualität in 3D scheint akzeptabel zu sein, jedoch konnten wir in dies
 Es gibt einige Herausforderungen, insbesondere mit der Physics Engine von Godot 4.3. In unserem Fall, bei der Entwicklung eines kleinen 3D-Spiels, stellte sich heraus, dass die Physics Engine nicht besonders akkurat und performant ist. Diese Schwierigkeiten erforderten zusätzliche Anpassungen und Optimierungen, um die gewünschte Funktionalität zu erreichen. Insgesamt bietet die Godot Engine 4.3 jedoch eine robuste und vielseitige Plattform für Spieleentwickler, die bereit sind, sich in die Engine einzuarbeiten und individuelle Lösungen für spezifische Herausforderungen zu finden. 
 
 
-# Vergleich von Unreal Engine, Unity und Godot
+## Vergleich von Unreal Engine, Unity und Godot
 
-| Kategorie                 | Unreal Engine                                     | Unity                                               | Godot                                              |
-|----------------------------|---------------------------------------------------|-----------------------------------------------------|---------------------------------------------------|
-| **Unterstützte Plattformen** | PC, Konsolen, Mobile, VR/AR                        | PC, Konsolen, Mobile, VR/AR                          | Windows, macOS, Linux, Android, iOS, Konsolen      |
-| **Rentabilität/Kosten**     | Kostenfrei bis 1 Mio. USD Jahresumsatz, danach 5 % Umsatzbeteiligung | Personal (kostenlos), Pro ab 1.877 €/Jahr, Enterprise für große Teams | Open-Source, kostenlos (MIT-Lizenz)                |
-| **Performance**             | Noch ausstehend                                    | Noch ausstehend                                     | Noch ausstehend                                     |
-| **Rendering**               | Lumen (Global Illumination), Nanite (Virtualized Geometry), High-End-Rendering | HDRP, URP, Built-in, anpassbare Grafikqualität       | Vulkan-Renderer, moderne Rendering-Technologien    |
-| **Physik**                  | Noch ausstehend                                    | Noch ausstehend                                     | Noch ausstehend                                     |
+Im Folgenden finden sich die wichtigsten Eckdaten zu den drei Engines in tabellarischer Form. Die Angaben zur **Performance** basieren auf Beispiel-Benchmarks (Rendering/Physik) in einer Testumgebung mit folgendem System:
 
+- **CPU:** 12th Gen Intel(R) Core(TM) i9-12900H, 2,90 GHz (14 Kerne / 20 Threads)  
+- **RAM:** 32 GB  
+- **GPU:** NVIDIA GeForce RTX 3080 Ti Laptop GPU (16 GB VRAM)  
+- **Auflösung:** 2560 × 1600  
+
+### Performance und Physik-Evaluation
+Die Ergebnisse wurden anhand von Rendering-Benchmarks (Anzahl darstellbarer Objekte, bevor die Framerate unter 10 FPS fällt) und Physik-Benchmarks (instanziierte Kugeln oder Blöcke bis zum Erreichen einer kritischen Frame-Time von 100 ms) ermittelt.
+
+| **Kategorie**               | **Unreal Engine**                                                              | **Unity**                                                                             | **Godot**                                                                                      |
+|-----------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| **Lizenzmodell**            | Kostenfrei bis 1 Mio. USD Umsatz, dann 5 % Umsatzbeteiligung                  | Personal (kostenlos), Pro ab 1.877 €/Jahr; Enterprise für große Teams                  | Open Source (MIT), kostenfrei                                                                  |
+| **Unterstützte Plattformen**| PC, Konsolen, VR/AR (kein offizieller Web-Export seit UE4/UE5)                | PC, Konsolen, Mobile, VR/AR, Web (HTML5)                                              | PC, Mobile, Konsolen, Web (HTML5 per Export)                                                   |
+| **Rendering-Benchmark**     | Keine Daten vorhanden          | Layer 139: ca. 1.113.390 Blöcke, Frame Time ~102 ms                                    | Objektanzahl 203.275; im Frame ~101.024 Objekte                                               |
+| **Physik-Benchmark**        | Keine Daten vorhanden          | 11.584 Kugeln, danach Frame Time ≥100 ms                                               | 8.757 Instanzen, davon 1.502 aktive 3D-Physikobjekte                                           |
+| **Community & Ressourcen**  | Große AAA-Community, sehr aktive Foren, Blueprint + C++-Support               | Sehr verbreitet, riesiger Asset Store, unzählige Tutorials (YouTube, Foren etc.)       | Wachsende Community, gute Dokumentation, jedoch weniger Plugins/Assets als Unity/Unreal        |
+| **Grafik-Funktionen**       | High-End-Features (Nanite, Lumen), hohe Hardware-Anforderungen                | Versch. Render-Pipelines (URP, HDRP, Built-In), skalierbar, eher moderater Bedarf      | Vulkan ab Godot 4.x, weitere Optimierungen in Arbeit, 3D-Funktionalität wird ständig verbessert |
+| **Einsatzbereich**          | AAA / High-End-3D-Projekte, aufwendige visuelle Umsetzungen, steile Lernkurve | Sehr flexibel (2D, 3D, VR), eignet sich für Indie bis AA/AAA, relativ zugänglicher Einstieg | Besonders stark in 2D und Prototyping, Open Source, für 3D weiterentwickelt, aber teils weniger performant |
+
+
+**Hinweise zu den Messwerten**  
+- Die **Rendering-Benchmarks** prüfen, wie viele Objekte (Blöcke, Meshes o. Ä.) gerendert werden können, bevor die Bildrate unter einen praxisrelevanten Grenzwert sinkt.  
+- Die **Physik-Benchmarks** messen, wie viele Instanzen (z. B. Kugeln) erzeugt werden können, bevor die Frame-Time 100 ms (unter 10 FPS) überschreitet.  
 
 
 ## Fazit

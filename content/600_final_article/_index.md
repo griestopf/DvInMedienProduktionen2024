@@ -126,6 +126,8 @@ Die Unreal Engine 5 (UE5) von Epic Games ist eine der leistungsstärksten 3D-Ent
 ### Benutzerfreundlichkeit, Usability
 Unreal Engine 5 bietet eine moderne Oberfläche und vielfältige Funktionen, setzt für effizientes Arbeiten jedoch eine leistungsfähige Hardware voraus. Einsteiger finden die Fülle an Einstellungen anfangs oft verwirrend. Viele Funktionen sind tief verschachtelt, weshalb man sich intensiver einarbeiten muss als etwa in Unity oder Godot. Unser Team stieß zum Beispiel auf Konfigurationshürden bei Material-Instanzen und den Projekteinstellungen. Mit offiziellen Tutorials und Dokumentationen ließen sich diese jedoch lösen.
 
+Für das Endless-Runner-Projekt haben wir uns hauptsächlich auf Blueprints konzentriert, da diese eine schnelle Umsetzung ermöglichen, ohne direkt in den Code eingreifen zu müssen. Trotz der Vorteile können Blueprints in komplexen Projekten schnell unübersichtlich werden, weshalb eine saubere Strukturierung und Namenskonventionen besonders wichtig sind.
+
 ### Programmierumgebung, Tools
 Unreal Engine bietet zwei Hauptwege zur Entwicklung von Gameplay:
 - **Blueprints**: Ein visuelles Scripting-System, das schnelle Prototypen ohne tiefere Programmierkenntnisse erlaubt.
@@ -142,8 +144,20 @@ Die Grafikfunktionen der Unreal Engine 5 gehören zu den modernsten im Markt:
 
 Für unseren Endless-Runner, der keine fotorealistischen Assets nutzte, waren diese Features teils überdimensioniert. Wer jedoch hohen Wert auf realitätsnahe 3D-Umgebungen legt, wird mit Unreal Engine 5 hervorragend bedient.
 
+In unserem Endless Runner war die Grafik zwar eher schlicht gehalten, aber wir konnten einige interessante Shader-Effekte umsetzen. Besonders das "Curved World"-Feature, bei dem die Spielwelt optisch gekrümmt wird, war ein spannendes Experiment mit dem Material-Editor. Durch die Nutzung einer Material Parameter Collection (MPC) konnten wir verschiedene Parameter wie Krümmungsradius und Intensität anpassen, was zu einem einzigartigen Look führte.
+
+![Material_1](images/Material_Function.png)
+![Material_2](images/Material_Function_settings.png)
+
+
 ### Character Animation
-Die Engine verfügt über komplexe Animationswerkzeuge, darunter Animation Blueprints, State Machines und Retargeting. Dadurch können Animationen von unterschiedlichen Skeletten übernommen werden. Für unseren Endless-Runner importierten wir Mixamo-Animationen und passten sie mithilfe des Unreal-Mannequin-Skeletts an. Dieses System funktionierte gut und ermöglichte nahtlose Bewegungsabläufe.
+Die Engine verfügt über komplexe Animationswerkzeuge, darunter Animation Blueprints, State Machines und Retargeting. Dadurch können Animationen von unterschiedlichen Skeletten übernommen werden. 
+Für die Charakteranimation wurde ein Modell von Mixamo genutzt. Mixamo bietet eine große Auswahl an vorgefertigten Animationen, die sich leicht in Unreal importieren lassen. Allerdings gab es einige Schwierigkeiten beim Retargeting der Animationen, da die Skelettstrukturen von Mixamo nicht 1:1 mit dem Unreal-Standard-Mannequin übereinstimmen.
+Um dieses Problem zu lösen, mussten wir eine Retargeting-Session innerhalb von Unreal durchführen, in der die Knochen korrekt zugeordnet wurden. Danach konnten wir die Lauf-, Sprung- und Rutschanimationen problemlos in unser Spiel integrieren. Besonders das Sliding-Feature war eine Herausforderung, da die Kapsel-Kollision des Charakters angepasst werden musste, um das Untergleiten von Hindernissen zu ermöglichen.
+
+![Charac](images/Character_Animation_1.png)
+![Charac](images/Character_Animation_2.png)
+
 
 ### Lernkurve
 Unreal Engine 5 erfordert eine steile Einarbeitung. Blueprints sind ein schneller Einstieg für Prototypen, doch für umfassende Projekte ist fundiertes C++-Wissen ratsam. Wer aus anderen Engines kommt, muss sich zudem auf das komplexe Projekt-Setup und die Editor-Struktur einstellen. Dennoch gibt es eine große Menge an Lernmaterial: Offizielle Dokumentation, Community-Foren, YouTube-Kanäle und kostenpflichtige Kurse helfen beim Einstieg.
@@ -165,10 +179,46 @@ Für unseren Physik-Benchmark waren mehrere Projekteinstellungen nötig. Kollisi
 #### UAssets und Versionskontrolle
 Weil Unreal Assets in binären Dateien (UAssets) gespeichert werden, können Merge-Konflikte in Git oder anderen Versionskontrollen schwer zu lösen sein. Um dies zu vermeiden, braucht es sorgfältige Arbeitsabläufe und die Aufteilung der Projektbereiche.
 
+#### Herausforderungen: Endless Runner
+Bei der Entwicklung des Spiels kam es zu Herausforderungen, sei es durch die Mechanik/Physik, der Grafischendarstellung oder auch die Kamera Einstellungen.
+
+Ein Beispiel für eine Herausforderung war die Optimierung des Straßen-Spawn-Systems. Ursprünglich wurden zu viele Straßenabschnitte gleichzeitig geladen, was zu Performance-Problemen führte. Die Lösung war die Implementierung eines Kollisionstriggers: Sobald der Spieler eine neue Plattform betritt, wird eine neue Straße generiert und die alte gelöscht. Dies sorgte für eine effiziente Verwaltung der Level-Elemente.
+
+![Probleme](images/Problem_Lernkurve_1.png)
+![Probleme](images/Problem_Lernkurve_2.png)
+
+Ein weiteres Problem trat bei der Rutschmechanik auf. In der ersten Version konnte der Charakter zwar eine Slide-Animation ausführen, aber die Kollision verhinderte das tatsächliche Durchrutschen unter Hindernissen. Hier mussten wir die Kapsel-Kollision des Charakters dynamisch anpassen und nach der Animation wieder auf die Standardgröße zurücksetzen.
+
+![Probleme](images/Problem_Lernkurve_3.png)
+![Probleme](images/Problem_Lernkurve_4.png)
+
+Ein zusätzliches Problem war die Kameraeinstellung. Die Kamera sollte den Charakter flüssig verfolgen, ohne dass abrupte Bewegungen auftreten. Dafür wurde ein Kamera-Blueprint erstellt, der die Bewegung interpoliert und sich dynamisch an den Spurwechsel anpasst.
+
+![Probleme](images/Problem_Lernkurve_5.png)
+
+Das Power-Up-System wurde so integriert, dass der Spieler temporäre Vorteile wie einen Magnet-Effekt oder höhere Sprünge erhalten kann. Die Power-Ups erscheinen zufällig in der Spielwelt und werden über ein Widget im HUD angezeigt.
+
+![Probleme](images/Problem_Lernkurve_6.png)
+![Probleme](images/Problem_Lernkurve_7.png)
+
+Der gespeicherte Highscore wird in einer Datei im Slot „SaveGame“ abgelegt, sodass die besten Punktestände erhalten bleiben. Dies ermöglicht es, die Punktzahlen auch nach einem Spielende wieder abzurufen.
+
+![Probleme](images/Problem_Lernkurve_8.png)
+![Probleme](images/Problem_Lernkurve_9.png)
+![Probleme](images/Problem_Lernkurve_10.png)
+![Probleme](images/Problem_Lernkurve_11.png)
+![Probleme](images/Problem_Lernkurve_12.png)
+
+
+
 ### Gesamteindruck
 Unreal Engine 5 zählt zu den leistungsfähigsten Engines für hochwertige 3D-Projekte und bietet dank Nanite und Lumen Top-Grafik. Sie ist ideal für ambitionierte Spieleentwicklungen oder interaktive Echtzeitvisualisierungen, wenn genügend Hardwareressourcen verfügbar sind. Allerdings ist die Einstiegshürde hoch, und das Fehlen einer aktuellen Web-Export-Lösung kann sich für bestimmte Projekte als kritisch erweisen.
 
+Die Entwicklung eines Endless Runners mit Unreal Engine war eine spannende Erfahrung, die uns viele Einblicke in die Funktionsweise der Engine gegeben hat. Besonders positiv ist die Flexibilität der Engine: Dank Blueprints konnten wir viele Mechaniken schnell umsetzen, ohne tief in C++ einsteigen zu müssen. Die Grafikqualität und die verfügbaren Tools sind auf einem sehr hohen Niveau, was Unreal zu einer idealen Wahl für ambitionierte Projekte macht.
+
 Für rein 2D-basierte Spiele oder extrem einfache Prototypen wirkt Unreal oft überdimensioniert. Dort sind andere Engines (z. B. Godot oder Unity) meist schneller eingerichtet. Wer jedoch an AAA-Qualität oder großen Projekten interessiert ist, findet in UE5 eine mächtige, wenn auch komplexe Entwicklungsumgebung.
+
+Insgesamt sind wir sehr zufrieden mit dem Endergebnis. Der Endless Runner funktioniert stabil, und wir konnten viele interessante Features wie zufällige Hindernis-Generierung, Power-Ups und ein Highscore-System implementieren. Unreal Engine hat sich als leistungsfähige und vielseitige Entwicklungsplattform erwiesen.
 
 
 ## Godot

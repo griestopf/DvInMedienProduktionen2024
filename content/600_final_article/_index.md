@@ -146,7 +146,7 @@ Für unseren Endless-Runner, der keine fotorealistischen Assets nutzte, waren di
 
 In unserem Endless Runner war die Grafik zwar eher schlicht gehalten, aber wir konnten einige interessante Shader-Effekte umsetzen. Besonders das "Curved World"-Feature, bei dem die Spielwelt optisch gekrümmt wird, war ein spannendes Experiment mit dem Material-Editor. Durch die Nutzung einer Material Parameter Collection (MPC) konnten wir verschiedene Parameter wie Krümmungsradius und Intensität anpassen, was zu einem einzigartigen Look führte.
 
-![Material_1](images/Material_Function.png)
+![Material_1](images/Material_Function.png "Dieser Screenshot zeigt den Curved World Shader im Material-Editor. Durch mathematische Berechnungen und Parametersteuerung wird der Spielfluss optisch gekrümmt, sodass die Umgebung eine kontinuierliche Biegung erhält. Dies trägt zur visuellen Dynamik des Endless Runners bei.")
 ![Material_2](images/Material_Function_settings.png)
 
 
@@ -155,7 +155,7 @@ Die Engine verfügt über komplexe Animationswerkzeuge, darunter Animation Bluep
 Für die Charakteranimation wurde ein Modell von Mixamo genutzt. Mixamo bietet eine große Auswahl an vorgefertigten Animationen, die sich leicht in Unreal importieren lassen. Allerdings gab es einige Schwierigkeiten beim Retargeting der Animationen, da die Skelettstrukturen von Mixamo nicht 1:1 mit dem Unreal-Standard-Mannequin übereinstimmen.
 Um dieses Problem zu lösen, mussten wir eine Retargeting-Session innerhalb von Unreal durchführen, in der die Knochen korrekt zugeordnet wurden. Danach konnten wir die Lauf-, Sprung- und Rutschanimationen problemlos in unser Spiel integrieren. Besonders das Sliding-Feature war eine Herausforderung, da die Kapsel-Kollision des Charakters angepasst werden musste, um das Untergleiten von Hindernissen zu ermöglichen.
 
-![Charac](images/Character_Animation_1.png)
+![Charac](images/Character_Animation_1.png "Diese Screenshots zeigen die Retargeting-Session in Unreal Engine. Da das Mixamo-Skelett nicht direkt mit dem Unreal-Mannequin kompatibel ist, wurde eine Knochenanpassung durchgeführt. Dadurch können die Mixamo-Animationen für Laufen, Springen und Rutschen korrekt auf den Charakter übertragen werden.fehlerhaft sein.")
 ![Charac](images/Character_Animation_2.png)
 
 
@@ -185,16 +185,16 @@ Bei der Entwicklung des Spiels kam es zu Herausforderungen, sei es durch die Mec
 Ein Beispiel für eine Herausforderung war die Optimierung des Straßen-Spawn-Systems. Ursprünglich wurden zu viele Straßenabschnitte gleichzeitig geladen, was zu Performance-Problemen führte. Die Lösung war die Implementierung eines Kollisionstriggers: Sobald der Spieler eine neue Plattform betritt, wird eine neue Straße generiert und die alte gelöscht. Dies sorgte für eine effiziente Verwaltung der Level-Elemente.
 
 ![Probleme](images/Problem_Lernkurve_1.png)
-![Probleme](images/Problem_Lernkurve_2.png)
+![Probleme](images/Problem_Lernkurve_2.png "Dieser Screenshot zeigt die Blueprint-Logik für das Erstellen und Entfernen der Straßenabschnitte. Das System sorgt dafür, dass immer nur eine bestimmte Anzahl an Plattformen existiert, indem neue Straßen generiert und alte entfernt werden, sobald der Spieler voranschreitet. Dies optimiert die Performance und verhindert, dass sich unnötige Objekte im Speicher ansammeln.")
 
 Ein weiteres Problem trat bei der Rutschmechanik auf. In der ersten Version konnte der Charakter zwar eine Slide-Animation ausführen, aber die Kollision verhinderte das tatsächliche Durchrutschen unter Hindernissen. Hier mussten wir die Kapsel-Kollision des Charakters dynamisch anpassen und nach der Animation wieder auf die Standardgröße zurücksetzen.
 
-![Probleme](images/Problem_Lernkurve_3.png)
+![Probleme](images/Problem_Lernkurve_3.png "Hier wird die Implementierung der Rutschmechanik in Blueprints dargestellt. Der Charakter wechselt in die Slide-Animation, wenn der Spieler die entsprechende Taste drückt. Gleichzeitig wird die Kapsel-Kollision des Charakters vorübergehend verkleinert, um ein realistisches Durchrutschen unter Hindernissen zu ermöglichen. Nach der Animation kehrt die Kollision zur ursprünglichen Größe zurück.")
 ![Probleme](images/Problem_Lernkurve_4.png)
 
 Ein zusätzliches Problem war die Kameraeinstellung. Die Kamera sollte den Charakter flüssig verfolgen, ohne dass abrupte Bewegungen auftreten. Dafür wurde ein Kamera-Blueprint erstellt, der die Bewegung interpoliert und sich dynamisch an den Spurwechsel anpasst.
 
-![Probleme](images/Problem_Lernkurve_5.png)
+![Probleme](images/Problem_Lernkurve_5.png "Der Screenshot zeigt die Implementierung der dynamischen Kamerasteuerung. Die Kamera folgt dem Charakter mit einer sanften Verzögerung und passt sich automatisch an Spurwechsel und Sprünge an. Dies sorgt für ein flüssiges Spielerlebnis, ohne abrupte Bewegungen oder ruckartige Wechsel in der Kameraposition.")
 
 Das Power-Up-System wurde so integriert, dass der Spieler temporäre Vorteile wie einen Magnet-Effekt oder höhere Sprünge erhalten kann. Die Power-Ups erscheinen zufällig in der Spielwelt und werden über ein Widget im HUD angezeigt.
 
@@ -203,11 +203,11 @@ Das Power-Up-System wurde so integriert, dass der Spieler temporäre Vorteile wi
 
 Der gespeicherte Highscore wird in einer Datei im Slot „SaveGame“ abgelegt, sodass die besten Punktestände erhalten bleiben. Dies ermöglicht es, die Punktzahlen auch nach einem Spielende wieder abzurufen.
 
-![Probleme](images/Problem_Lernkurve_8.png)
-![Probleme](images/Problem_Lernkurve_9.png)
-![Probleme](images/Problem_Lernkurve_10.png)
-![Probleme](images/Problem_Lernkurve_11.png)
-![Probleme](images/Problem_Lernkurve_12.png)
+![Probleme](images/Problem_Lernkurve_8.png "Nach dem Spielende wird der Highscore auf dem Game-Over-Bildschirm angezeigt. Falls der Spieler einen neuen Rekord aufgestellt hat, wird dieser gespeichert und mit zukünftigen Runden verglichen. Das System nutzt eine SaveGame-Klasse, um den Punktestand dauerhaft zu sichern.")
+![Probleme](images/Problem_Lernkurve_9.png "Funktion Veränderung des HUD")
+![Probleme](images/Problem_Lernkurve_10.png "Funktion Veränderung des HUD")
+![Probleme](images/Problem_Lernkurve_11.png "Funktion Veränderung des HUD")
+![Probleme](images/Problem_Lernkurve_12.png "Funktion Veränderung des HUD")
 
 
 

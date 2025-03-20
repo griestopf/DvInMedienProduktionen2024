@@ -222,6 +222,8 @@ Insgesamt sind wir sehr zufrieden mit dem Endergebnis. Der Endless Runner funkti
 
 
 ## Godot
+![Godot Endless Runner Main Menu Image](Godot_ER_mainmenu.png)
+![Godot Endless Runner Image](Godot_ER.png)
 
 ### Die Engine
 Die Godot Engine, welches 2014 veröffentlicht wurde, ist eine MIT - lizensierte Open-Source Engine. Die MIT-Lizenz erlaubt es die Software frei zu nutzen, zu modifizieren und zu verteilen, solange der ursprüngliche Lizenztext beibehalten wird. Sie bietet zudem keinen Haftungsausschluss für Schäden. Godot wird von einer aktiven Community sowie einem Kernteam kontinuierlich weiterentwickelt. Godot unterstützt sowohl 2D- als auch 3D-Spieleentwicklung, wobei der Fokus besonders auf der 2D- Performance liegt, allerdings gab es bereits schon wesentliche Fortschritte im 3D - Bereich. Die Engine bietet eine umfassende Plattformunterstützung und erlaubt die Veröffentlichung von Spielen auf Windows, macOS, Linux, Android, iOS und Konsolen. Ein Alleinstellungsmerkmal von Godot ist das integrierte Szenensystem, das Spielelemente hierarchisch organisiert und den Entwicklungsprozess stark vereinfacht.
@@ -253,6 +255,9 @@ Die Grafikqualität in 3D scheint akzeptabel zu sein, jedoch konnten wir in dies
 
 Es gibt einige Herausforderungen, insbesondere mit der Physics Engine von Godot 4.3. In unserem Fall, bei der Entwicklung eines kleinen 3D-Spiels, stellte sich heraus, dass die Physics Engine nicht besonders akkurat und performant ist. Diese Schwierigkeiten erforderten zusätzliche Anpassungen und Optimierungen, um die gewünschte Funktionalität zu erreichen. Insgesamt bietet die Godot Engine 4.3 jedoch eine robuste und vielseitige Plattform für Spieleentwickler, die bereit sind, sich in die Engine einzuarbeiten und individuelle Lösungen für spezifische Herausforderungen zu finden. 
 
+### Referenzen
+- [Github Godot Benchmark](https://github.com/Schnike/GodotBenchmark)
+- [Godot WEB-Export](https://schnike.itch.io/space-mouse)
 
 ## Vergleich von Unreal Engine, Unity und Godot
 
@@ -377,10 +382,13 @@ Unreal Engine überzeugt mit herausragender Grafikqualität, dank moderner Techn
 
 ## Anhang
 
-#### Unreal:
+### Referenzen
+
 1. [Unreal Engine 5 – Offizielle Dokumentation](https://docs.unrealengine.com/5.0/en-US/)  
 2. [Unreal Engine Lizenzmodell](https://www.unrealengine.com/en-US/release)  
 3. [Blueprint Visual Scripting](https://docs.unrealengine.com/5.0/en-US/blueprints-visual-scripting-in-unreal-engine/)  
 4. [Nanite in Unreal Engine 5](https://docs.unrealengine.com/5.0/en-US/nanite-in-unreal-engine/)  
 5. [Lumen in Unreal Engine 5](https://docs.unrealengine.com/5.0/en-US/lumen-in-unreal-engine/)  
 6. [Pixel Streaming Informationen (Community Plugin)](https://docs.unrealengine.com/5.0/en-US/pixel-streaming-in-unreal-engine/)
+1. [Godot Dokumentation Referenz](https://docs.godotengine.org/de/4.x/index.html)
+1. [Godot Endless Runner Referenz](https://gameidea.org/2024/10/01/making-3d-endless-runner-game-part-1/)

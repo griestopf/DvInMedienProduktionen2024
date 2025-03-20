@@ -131,138 +131,110 @@ Unity bietet eine starke Basis für verschiedenste Projekte und bleibt eine der 
 
 ## Unreal
 
+### Die Engine
+Die Unreal Engine 5 (UE5) von Epic Games ist eine der leistungsstärksten 3D-Entwicklungsplattformen. Sie glänzt besonders durch High-End-Grafik, ermöglicht durch Nanite (virtuelle Geometrie) und Lumen (Echtzeit-Global-Illumination). Die Engine ist bis zu einem Jahresumsatz von einer Million US-Dollar kostenfrei nutzbar; darüber hinaus fällt eine Umsatzbeteiligung von fünf Prozent an. Dies ist für kleine und mittlere Projekte attraktiv, kann jedoch für umsatzstarke Produktionen schnell teuer werden.
 
-## Überblick
-Die Unreal Engine 5 (UE5), entwickelt von Epic Games, ist eine der leistungsstärksten Spiele-Engines auf dem Markt. Sie ist bekannt für ihre beeindruckenden High-End-Rendering-Fähigkeiten und professionellen Tools, die von AAA-Studios und Indie-Entwicklern gleichermaßen genutzt werden. UE5 unterstützt eine Vielzahl von Plattformen, darunter PC, Konsolen, mobile Geräte sowie VR/AR. Zu den herausragenden Features gehören:
+### Benutzerfreundlichkeit, Usability
+Unreal Engine 5 bietet eine moderne Oberfläche und vielfältige Funktionen, setzt für effizientes Arbeiten jedoch eine leistungsfähige Hardware voraus. Einsteiger finden die Fülle an Einstellungen anfangs oft verwirrend. Viele Funktionen sind tief verschachtelt, weshalb man sich intensiver einarbeiten muss als etwa in Unity oder Godot. Unser Team stieß zum Beispiel auf Konfigurationshürden bei Material-Instanzen und den Projekteinstellungen. Mit offiziellen Tutorials und Dokumentationen ließen sich diese jedoch lösen.
 
-- **Lumen:** Dynamische globale Beleuchtung in Echtzeit.
-- **Nanite:** Virtualisierte Geometrie, die hochdetaillierte Umgebungen effizient darstellt.
-- **Chaos Physics:** Fortschrittliche Physik-Engine für realistische Simulationen.
+Für das Endless-Runner-Projekt haben wir uns hauptsächlich auf Blueprints konzentriert, da diese eine schnelle Umsetzung ermöglichen, ohne direkt in den Code eingreifen zu müssen. Trotz der Vorteile können Blueprints in komplexen Projekten schnell unübersichtlich werden, weshalb eine saubere Strukturierung und Namenskonventionen besonders wichtig sind.
 
-Offizielle Website: [Unreal Engine](https://www.unrealengine.com)
+### Programmierumgebung, Tools
+Unreal Engine bietet zwei Hauptwege zur Entwicklung von Gameplay:
+- **Blueprints**: Ein visuelles Scripting-System, das schnelle Prototypen ohne tiefere Programmierkenntnisse erlaubt.
+- **C++**: Für komplexe oder besonders performante Anwendungen wird C++ eingesetzt, das allerdings anspruchsvoller ist.
 
+Der Editor unterstützt Hot Reload, sodass Codeänderungen in vielen Fällen ohne Neustart übernommen werden können. In unserem Projekt zeigten sich hierbei jedoch gelegentliche Fehler, die teils einen Editor-Neustart erforderten.
 
+Für Tests und Benchmarks erwies sich die Einrichtung teils als aufwändig. Beispielsweise verlangte das ständige Instantiieren und Verwalten von Objekten in Echtzeit (z. B. für einen Physik-Benchmark) ein tieferes Verständnis von Actor-Klassen und Kollisionskanälen.
 
-## Lizenzmodell
-- **Kosten:** Die Unreal Engine ist grundsätzlich kostenlos nutzbar. Epic Games erhebt jedoch eine Umsatzbeteiligung von 5 %, wenn der Jahresumsatz eines Titels 1 Million USD überschreitet.
-- **Epic Games Store:** Für Umsätze, die über den Epic Games Store generiert werden, entfällt die Lizenzgebühr.
-- **Flexibilität:** Besonders attraktiv für Indie-Entwickler, da keine Vorabkosten anfallen. Größere Studios können individuelle Verträge aushandeln.
+### Grafikqualität
+Die Grafikfunktionen der Unreal Engine 5 gehören zu den modernsten im Markt:
+- **Nanite**: Eignet sich für extrem detaillierte Meshes, die ohne manuelles LOD-Handling gerendert werden können.
+- **Lumen**: Bietet dynamische globale Beleuchtung, wodurch Szenen realistisch wirken.
 
-Weiterführende Informationen: [Unreal Engine Lizenzmodell](https://www.unrealengine.com/en-US/release)
+Für unseren Endless-Runner, der keine fotorealistischen Assets nutzte, waren diese Features teils überdimensioniert. Wer jedoch hohen Wert auf realitätsnahe 3D-Umgebungen legt, wird mit Unreal Engine 5 hervorragend bedient.
 
+In unserem Endless Runner war die Grafik zwar eher schlicht gehalten, aber wir konnten einige interessante Shader-Effekte umsetzen. Besonders das "Curved World"-Feature, bei dem die Spielwelt optisch gekrümmt wird, war ein spannendes Experiment mit dem Material-Editor. Durch die Nutzung einer Material Parameter Collection (MPC) konnten wir verschiedene Parameter wie Krümmungsradius und Intensität anpassen, was zu einem einzigartigen Look führte.
 
-
-## Verbreitung und Community
-Die Unreal Engine ist sowohl in der AAA-Spieleentwicklung als auch bei Indie-Entwicklern weit verbreitet. Beispiele für bekannte Spiele sind **Fortnite**, **Gears of War** und **Final Fantasy VII Remake**. 
-
-### Community und Ressourcen:
-- **Foren und Discord-Gruppen:** Sehr aktiv und hilfreich für Problemlösungen und Feedback.
-- **YouTube-Tutorials und Online-Kurse:** Eine große Auswahl an kostenlosen und kostenpflichtigen Lernressourcen.
-- **Unreal Marketplace:** Umfangreiche Bibliothek an Plugins, Assets und Tools.
-
-Nützliche Links:
-- [Unreal Engine Forum](https://forums.unrealengine.com)
-- [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace)
-- [YouTube-Tutorials für UE5](https://www.youtube.com/results?search_query=unreal+engine+5+tutorial)
+![Material_1](images/Material_Function.png "Dieser Screenshot zeigt den Curved World Shader im Material-Editor. Durch mathematische Berechnungen und Parametersteuerung wird der Spielfluss optisch gekrümmt, sodass die Umgebung eine kontinuierliche Biegung erhält. Dies trägt zur visuellen Dynamik des Endless Runners bei.")
+![Material_2](images/Material_Function_settings.png)
 
 
+### Character Animation
+Die Engine verfügt über komplexe Animationswerkzeuge, darunter Animation Blueprints, State Machines und Retargeting. Dadurch können Animationen von unterschiedlichen Skeletten übernommen werden. 
+Für die Charakteranimation wurde ein Modell von Mixamo genutzt. Mixamo bietet eine große Auswahl an vorgefertigten Animationen, die sich leicht in Unreal importieren lassen. Allerdings gab es einige Schwierigkeiten beim Retargeting der Animationen, da die Skelettstrukturen von Mixamo nicht 1:1 mit dem Unreal-Standard-Mannequin übereinstimmen.
+Um dieses Problem zu lösen, mussten wir eine Retargeting-Session innerhalb von Unreal durchführen, in der die Knochen korrekt zugeordnet wurden. Danach konnten wir die Lauf-, Sprung- und Rutschanimationen problemlos in unser Spiel integrieren. Besonders das Sliding-Feature war eine Herausforderung, da die Kapsel-Kollision des Charakters angepasst werden musste, um das Untergleiten von Hindernissen zu ermöglichen.
 
-## Benutzerfreundlichkeit und Usability
-
-### Editor-Oberfläche
-Die Editor-Oberfläche der Unreal Engine ist modular aufgebaut und bietet intuitive Panels wie den Content Browser, das Details Panel und den Blueprint Editor. Sie ist mächtig und anfangs etwas überwältigend, aber logisch strukturiert.
-
-### Blueprints
-- **Visuelles Scripting-System**, das ohne Programmierkenntnisse genutzt werden kann.
-- Ideal für Prototyping und einfache Mechaniken.
-- **Empfohlener Einstieg:** [Blueprint Visual Scripting Dokumentation](https://docs.unrealengine.com/5.0/en-US/blueprints-visual-scripting-in-unreal-engine/)
-
-### Workflow
-- **Hot Reload:** Änderungen im Code können sofort im Editor getestet werden.
-- **Projektvorlagen:** FPS, Third Person, Side Scroller und weitere Vorlagen erleichtern den Einstieg.
+![Charac](images/Character_Animation_1.png "Diese Screenshots zeigen die Retargeting-Session in Unreal Engine. Da das Mixamo-Skelett nicht direkt mit dem Unreal-Mannequin kompatibel ist, wurde eine Knochenanpassung durchgeführt. Dadurch können die Mixamo-Animationen für Laufen, Springen und Rutschen korrekt auf den Charakter übertragen werden.fehlerhaft sein.")
+![Charac](images/Character_Animation_2.png)
 
 
+### Lernkurve
+Unreal Engine 5 erfordert eine steile Einarbeitung. Blueprints sind ein schneller Einstieg für Prototypen, doch für umfassende Projekte ist fundiertes C++-Wissen ratsam. Wer aus anderen Engines kommt, muss sich zudem auf das komplexe Projekt-Setup und die Editor-Struktur einstellen. Dennoch gibt es eine große Menge an Lernmaterial: Offizielle Dokumentation, Community-Foren, YouTube-Kanäle und kostenpflichtige Kurse helfen beim Einstieg.
 
-## Programmierumgebung und Tools
-- **Programmiersprachen:** Unterstützung für C++ und Blueprints.
-- **IDE-Integration:** Nahtlose Integration mit Visual Studio, Rider und Xcode.
-- **Debugging und Profiling:** Tools wie **Unreal Insights** und eingebaute Debug-Funktionen in Blueprints.
+### Probleme & Lösungen, Eigenheiten
 
-### Teamarbeit
-- **Version Control:** Unterstützung für Git und Perforce.
-- **Herausforderungen:** Bei binären Assets (UAssets) können Merge-Konflikte auftreten.
+#### Fehlender Web-Export
+In älteren Versionen gab es einen offiziellen Web-Export. Mit UE4 wurde er eingestellt, was Entwicklern nur noch die Option ließ, „Pixel Streaming“ oder externe Lösungen zu nutzen. In UE5 fehlt diese Option vollständig. Das Fehlen des Web-Exports ist für viele Projekte ein Nachteil, wenn Browser-Unterstützung benötigt wird.
 
-Nützliche Tools:
-- [Unreal Insights](https://docs.unrealengine.com/5.0/en-US/unreal-insights-overview-in-unreal-engine/)
+#### Implementierung der Benchmarks
+Unsere Benchmarks sollten Framezeiten, Objektinstanzierungen und andere Metriken erfassen. Ein Problem war die fehlende Möglichkeit, umfangreiche Daten direkt in eine Konsole oder Log-Datei auszugeben, sobald das Projekt exportiert ist. Stattdessen stellt Unreal On-Screen-Statistiken und hauseigene Logs bereit, die für automatisierte Testverfahren aber nur bedingt geeignet sind.
 
+#### Kameramanagement
+Die Kamera in Unreal Engine 5 ist an einen Player-Controller geknüpft. Eine statische oder frei rotierende Kamera ließ sich nur schwer ohne zusätzliche Keyframe-Animationen realisieren. Da wir Benchmarks in Echtzeit ausführen wollten, benötigten wir jedoch eine feste Kameraperspektive. Cine Cameras sind zwar mächtig, aber eher für vorgerenderte Sequenzen ausgelegt, was automatisierte Tests erschwerte.
 
+#### Physik-Benchmarks
+Für unseren Physik-Benchmark waren mehrere Projekteinstellungen nötig. Kollisionskanäle, Sub-Level-Strukturen und Physikprofile gestalteten sich komplexer als erwartet.
 
-## Grafikqualität
-- **Lumen und Nanite:** Revolutionieren das Rendering und ermöglichen realistische Beleuchtung und detaillierte Umgebungen.
-- **Post-Processing:** Effekte wie Bloom, Depth of Field und Motion Blur.
-- **Skalierbarkeit:** Einstellbare Qualität für verschiedene Hardware-Anforderungen.
+#### UAssets und Versionskontrolle
+Weil Unreal Assets in binären Dateien (UAssets) gespeichert werden, können Merge-Konflikte in Git oder anderen Versionskontrollen schwer zu lösen sein. Um dies zu vermeiden, braucht es sorgfältige Arbeitsabläufe und die Aufteilung der Projektbereiche.
 
-### Beispiel:
-Eine fotorealistische Landschaft mit Nanite und Lumen:
-- [Landschaftserstellung mit Nanite und Lumen](https://www.youtube.com/watch?v=1NKOiLrX4r8)
+#### Herausforderungen: Endless Runner
+Bei der Entwicklung des Spiels kam es zu Herausforderungen, sei es durch die Mechanik/Physik, der Grafischendarstellung oder auch die Kamera Einstellungen.
 
+Ein Beispiel für eine Herausforderung war die Optimierung des Straßen-Spawn-Systems. Ursprünglich wurden zu viele Straßenabschnitte gleichzeitig geladen, was zu Performance-Problemen führte. Die Lösung war die Implementierung eines Kollisionstriggers: Sobald der Spieler eine neue Plattform betritt, wird eine neue Straße generiert und die alte gelöscht. Dies sorgte für eine effiziente Verwaltung der Level-Elemente.
 
+![Probleme](images/Problem_Lernkurve_1.png)
+![Probleme](images/Problem_Lernkurve_2.png "Dieser Screenshot zeigt die Blueprint-Logik für das Erstellen und Entfernen der Straßenabschnitte. Das System sorgt dafür, dass immer nur eine bestimmte Anzahl an Plattformen existiert, indem neue Straßen generiert und alte entfernt werden, sobald der Spieler voranschreitet. Dies optimiert die Performance und verhindert, dass sich unnötige Objekte im Speicher ansammeln.")
 
-## Charakteranimation
-- **Animationssystem:** Umfassend mit State Machines, Inverse Kinematik und Layered Animation.
-- **Tools:** Full Body IK (UE5) und Layered Animation ermöglichen präzise Steuerung.
-- **Asset-Import:** Unkomplizierter Import von Animationen, z. B. von Mixamo.
+Ein weiteres Problem trat bei der Rutschmechanik auf. In der ersten Version konnte der Charakter zwar eine Slide-Animation ausführen, aber die Kollision verhinderte das tatsächliche Durchrutschen unter Hindernissen. Hier mussten wir die Kapsel-Kollision des Charakters dynamisch anpassen und nach der Animation wieder auf die Standardgröße zurücksetzen.
 
-### Nützliche Ressourcen:
-- [Unreal Engine Animation Dokumentation](https://docs.unrealengine.com/5.0/en-US/animation-blueprint-in-unreal-engine/)
+![Probleme](images/Problem_Lernkurve_3.png "Hier wird die Implementierung der Rutschmechanik in Blueprints dargestellt. Der Charakter wechselt in die Slide-Animation, wenn der Spieler die entsprechende Taste drückt. Gleichzeitig wird die Kapsel-Kollision des Charakters vorübergehend verkleinert, um ein realistisches Durchrutschen unter Hindernissen zu ermöglichen. Nach der Animation kehrt die Kollision zur ursprünglichen Größe zurück.")
+![Probleme](images/Problem_Lernkurve_4.png)
 
+Ein zusätzliches Problem war die Kameraeinstellung. Die Kamera sollte den Charakter flüssig verfolgen, ohne dass abrupte Bewegungen auftreten. Dafür wurde ein Kamera-Blueprint erstellt, der die Bewegung interpoliert und sich dynamisch an den Spurwechsel anpasst.
 
+![Probleme](images/Problem_Lernkurve_5.png "Der Screenshot zeigt die Implementierung der dynamischen Kamerasteuerung. Die Kamera folgt dem Charakter mit einer sanften Verzögerung und passt sich automatisch an Spurwechsel und Sprünge an. Dies sorgt für ein flüssiges Spielerlebnis, ohne abrupte Bewegungen oder ruckartige Wechsel in der Kameraposition.")
 
-## Lernkurve und Einstieg
-- **Schwierigkeit:** Der Einstieg kann komplex sein, besonders wegen der Vielzahl an Funktionen.
-- **Blueprints:** Ideal für Einsteiger ohne Programmierkenntnisse.
-- **C++ und APIs:** Für fortgeschrittene Entwickler wichtig, um das volle Potenzial der Engine auszuschöpfen.
-- **Ressourcen:** Umfangreiche Tutorials, Beispielprojekte und die offizielle Dokumentation.
+Das Power-Up-System wurde so integriert, dass der Spieler temporäre Vorteile wie einen Magnet-Effekt oder höhere Sprünge erhalten kann. Die Power-Ups erscheinen zufällig in der Spielwelt und werden über ein Widget im HUD angezeigt.
 
-### Empfehlenswerte Tutorials:
-- [Endless Runner Tutorial (YouTube)](https://www.youtube.com/results?search_query=unreal+engine+endless+runner+tutorial)
-- [Offizielle Unreal Engine Dokumentation](https://docs.unrealengine.com)
+![Probleme](images/Problem_Lernkurve_6.png)
+![Probleme](images/Problem_Lernkurve_7.png)
+
+Der gespeicherte Highscore wird in einer Datei im Slot „SaveGame“ abgelegt, sodass die besten Punktestände erhalten bleiben. Dies ermöglicht es, die Punktzahlen auch nach einem Spielende wieder abzurufen.
+
+![Probleme](images/Problem_Lernkurve_8.png "Nach dem Spielende wird der Highscore auf dem Game-Over-Bildschirm angezeigt. Falls der Spieler einen neuen Rekord aufgestellt hat, wird dieser gespeichert und mit zukünftigen Runden verglichen. Das System nutzt eine SaveGame-Klasse, um den Punktestand dauerhaft zu sichern.")
+![Probleme](images/Problem_Lernkurve_9.png "Funktion Veränderung des HUD")
+![Probleme](images/Problem_Lernkurve_10.png "Funktion Veränderung des HUD")
+![Probleme](images/Problem_Lernkurve_11.png "Funktion Veränderung des HUD")
+![Probleme](images/Problem_Lernkurve_12.png "Funktion Veränderung des HUD")
 
 
 
-## Erfahrungsbericht: Erstellung eines Endless Runners
+### Gesamteindruck
+Unreal Engine 5 zählt zu den leistungsfähigsten Engines für hochwertige 3D-Projekte und bietet dank Nanite und Lumen Top-Grafik. Sie ist ideal für ambitionierte Spieleentwicklungen oder interaktive Echtzeitvisualisierungen, wenn genügend Hardwareressourcen verfügbar sind. Allerdings ist die Einstiegshürde hoch, und das Fehlen einer aktuellen Web-Export-Lösung kann sich für bestimmte Projekte als kritisch erweisen.
 
-### Projektplanung und Konzeptualisierung
-- **Spielmechanik:** Der Spieler läuft automatisch und muss durch Springen oder Ducken Hindernisse überwinden.
-- **Thema und Design:** Festlegung des grafischen Stils, z. B. futuristisch oder Cartoon-artig.
+Die Entwicklung eines Endless Runners mit Unreal Engine war eine spannende Erfahrung, die uns viele Einblicke in die Funktionsweise der Engine gegeben hat. Besonders positiv ist die Flexibilität der Engine: Dank Blueprints konnten wir viele Mechaniken schnell umsetzen, ohne tief in C++ einsteigen zu müssen. Die Grafikqualität und die verfügbaren Tools sind auf einem sehr hohen Niveau, was Unreal zu einer idealen Wahl für ambitionierte Projekte macht.
 
-### Erstellung der Spielmechanik
-- **Blueprints:** Ideal, um die grundlegende Bewegung und Kollisionsabfragen zu realisieren.
-- **Level-Streaming:** Endlose Level durch modulare Abschnitte und zufälliges Spawn von Hindernissen.
+Für rein 2D-basierte Spiele oder extrem einfache Prototypen wirkt Unreal oft überdimensioniert. Dort sind andere Engines (z. B. Godot oder Unity) meist schneller eingerichtet. Wer jedoch an AAA-Qualität oder großen Projekten interessiert ist, findet in UE5 eine mächtige, wenn auch komplexe Entwicklungsumgebung.
 
-### Beispiel-Assets und Ressourcen:
-- [Endless Runner Starter Kit](https://www.unrealengine.com/marketplace/en-US/product/endless-runner-starter-kit)
-- [Beispielprojekt: Side Scroller](https://docs.unrealengine.com/5.0/en-US/side-scroller-template-in-unreal-engine/)
-
-
-
-## Probleme, Lösungen und Eigenheiten
-- **Binäre Assets:** Merge-Konflikte bei UAssets können die Zusammenarbeit in Teams erschweren.
-- **Hardware-Anforderungen:** Für Lumen und Nanite sind leistungsstarke GPUs erforderlich.
-- **Komplexität:** Die Vielfalt an Features kann Neulinge überfordern.
-
-### Lösungen:
-- **Virtual Assets** zur Verbesserung von Versionskontrollproblemen.
-- **Performance-Optimierungen** für mobile Geräte, z. B. durch Anpassungen in den Rendering-Einstellungen.
-
-
-
-## Gesamteindruck
-Die Unreal Engine überzeugt durch ihre herausragende Grafikqualität, vielseitige Tools und professionelle Funktionalität. Trotz der anfänglichen Komplexität erleichtern umfangreiche Tutorials, Blueprints und Community-Ressourcen den Einstieg. Besonders für ambitionierte Projekte geeignet, bietet die Engine aber auch eine solide Grundlage für kleinere Vorhaben.
-
+Insgesamt sind wir sehr zufrieden mit dem Endergebnis. Der Endless Runner funktioniert stabil, und wir konnten viele interessante Features wie zufällige Hindernis-Generierung, Power-Ups und ein Highscore-System implementieren. Unreal Engine hat sich als leistungsfähige und vielseitige Entwicklungsplattform erwiesen.
 
 
 ## Godot
+![Godot Endless Runner Main Menu Image](Godot_ER_mainmenu.png)
+![Godot Endless Runner Image](Godot_ER.png)
 
 ### Die Engine
 Die Godot Engine, welches 2014 veröffentlicht wurde, ist eine MIT - lizensierte Open-Source Engine. Die MIT-Lizenz erlaubt es die Software frei zu nutzen, zu modifizieren und zu verteilen, solange der ursprüngliche Lizenztext beibehalten wird. Sie bietet zudem keinen Haftungsausschluss für Schäden. Godot wird von einer aktiven Community sowie einem Kernteam kontinuierlich weiterentwickelt. Godot unterstützt sowohl 2D- als auch 3D-Spieleentwicklung, wobei der Fokus besonders auf der 2D- Performance liegt, allerdings gab es bereits schon wesentliche Fortschritte im 3D - Bereich. Die Engine bietet eine umfassende Plattformunterstützung und erlaubt die Veröffentlichung von Spielen auf Windows, macOS, Linux, Android, iOS und Konsolen. Ein Alleinstellungsmerkmal von Godot ist das integrierte Szenensystem, das Spielelemente hierarchisch organisiert und den Entwicklungsprozess stark vereinfacht.
@@ -294,17 +266,38 @@ Die Grafikqualität in 3D scheint akzeptabel zu sein, jedoch konnten wir in dies
 
 Es gibt einige Herausforderungen, insbesondere mit der Physics Engine von Godot 4.3. In unserem Fall, bei der Entwicklung eines kleinen 3D-Spiels, stellte sich heraus, dass die Physics Engine nicht besonders akkurat und performant ist. Diese Schwierigkeiten erforderten zusätzliche Anpassungen und Optimierungen, um die gewünschte Funktionalität zu erreichen. Insgesamt bietet die Godot Engine 4.3 jedoch eine robuste und vielseitige Plattform für Spieleentwickler, die bereit sind, sich in die Engine einzuarbeiten und individuelle Lösungen für spezifische Herausforderungen zu finden. 
 
+### Referenzen
+- [Github Godot Benchmark](https://github.com/Schnike/GodotBenchmark)
+- [Godot WEB-Export](https://schnike.itch.io/space-mouse)
 
 ## Vergleich von Unreal Engine, Unity und Godot
 
-| Kategorie                 | Unreal Engine                                     | Unity                                               | Godot                                              |
-|----------------------------|---------------------------------------------------|-----------------------------------------------------|---------------------------------------------------|
-| **Unterstützte Plattformen** | PC, Konsolen, Mobile, VR/AR                        | PC, Konsolen, Mobile, VR/AR                          | Windows, macOS, Linux, Android, iOS, Konsolen      |
-| **Rentabilität/Kosten**     | Kostenfrei bis 1 Mio. USD Jahresumsatz, danach 5 % Umsatzbeteiligung | Personal (kostenlos), Pro ab 1.877 €/Jahr, Enterprise für große Teams | Open-Source, kostenlos (MIT-Lizenz)                |
-| **Performance**             | Noch ausstehend                                    | Noch ausstehend                                     | Noch ausstehend                                     |
-| **Rendering**               | Lumen (Global Illumination), Nanite (Virtualized Geometry), High-End-Rendering | HDRP, URP, Built-in, anpassbare Grafikqualität       | Vulkan-Renderer, moderne Rendering-Technologien    |
-| **Physik**                  | Noch ausstehend                                    | Noch ausstehend                                     | Noch ausstehend                                     |
+## Vergleich von Unreal Engine, Unity und Godot
 
+Im Folgenden finden sich die wichtigsten Eckdaten zu den drei Engines in tabellarischer Form. Die Angaben zur **Performance** basieren auf Beispiel-Benchmarks (Rendering/Physik) in einer Testumgebung mit folgendem System:
+
+- **CPU:** 12th Gen Intel(R) Core(TM) i9-12900H, 2,90 GHz (14 Kerne / 20 Threads)  
+- **RAM:** 32 GB  
+- **GPU:** NVIDIA GeForce RTX 3080 Ti Laptop GPU (16 GB VRAM)  
+- **Auflösung:** 2560 × 1600  
+
+### Performance und Physik-Evaluation
+Die Ergebnisse wurden anhand von Rendering-Benchmarks (Anzahl darstellbarer Objekte, bevor die Framerate unter 10 FPS fällt) und Physik-Benchmarks (instanziierte Kugeln oder Blöcke bis zum Erreichen einer kritischen Frame-Time von 100 ms) ermittelt.
+
+| **Kategorie**               | **Unreal Engine**                                                              | **Unity**                                                                             | **Godot**                                                                                      |
+|-----------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| **Lizenzmodell**            | Kostenfrei bis 1 Mio. USD Umsatz, dann 5 % Umsatzbeteiligung                  | Personal (kostenlos), Pro ab 1.877 €/Jahr; Enterprise für große Teams                  | Open Source (MIT), kostenfrei                                                                  |
+| **Unterstützte Plattformen**| PC, Konsolen, VR/AR (kein offizieller Web-Export seit UE4/UE5)                | PC, Konsolen, Mobile, VR/AR, Web (HTML5)                                              | PC, Mobile, Konsolen, Web (HTML5 per Export)                                                   |
+| **Rendering-Benchmark**     | Keine Daten vorhanden          | Layer 139: ca. 1.113.390 Blöcke, Frame Time ~102 ms                                    | Objektanzahl 203.275; im Frame ~101.024 Objekte                                               |
+| **Physik-Benchmark**        | Keine Daten vorhanden          | 11.584 Kugeln, danach Frame Time ≥100 ms                                               | 8.757 Instanzen, davon 1.502 aktive 3D-Physikobjekte                                           |
+| **Community & Ressourcen**  | Große AAA-Community, sehr aktive Foren, Blueprint + C++-Support               | Sehr verbreitet, riesiger Asset Store, unzählige Tutorials (YouTube, Foren etc.)       | Wachsende Community, gute Dokumentation, jedoch weniger Plugins/Assets als Unity/Unreal        |
+| **Grafik-Funktionen**       | High-End-Features (Nanite, Lumen), hohe Hardware-Anforderungen                | Versch. Render-Pipelines (URP, HDRP, Built-In), skalierbar, eher moderater Bedarf      | Vulkan ab Godot 4.x, weitere Optimierungen in Arbeit, 3D-Funktionalität wird ständig verbessert |
+| **Einsatzbereich**          | AAA / High-End-3D-Projekte, aufwendige visuelle Umsetzungen, steile Lernkurve | Sehr flexibel (2D, 3D, VR), eignet sich für Indie bis AA/AAA, relativ zugänglicher Einstieg | Besonders stark in 2D und Prototyping, Open Source, für 3D weiterentwickelt, aber teils weniger performant |
+
+
+**Hinweise zu den Messwerten**  
+- Die **Rendering-Benchmarks** prüfen, wie viele Objekte (Blöcke, Meshes o. Ä.) gerendert werden können, bevor die Bildrate unter einen praxisrelevanten Grenzwert sinkt.  
+- Die **Physik-Benchmarks** messen, wie viele Instanzen (z. B. Kugeln) erzeugt werden können, bevor die Frame-Time 100 ms (unter 10 FPS) überschreitet.  
 
 
 ## Fazit
@@ -329,21 +322,27 @@ Unreal Engine überzeugt mit herausragender Grafikqualität, dank moderner Techn
     - UI System ist umständlich
  
       
-#### Unreal 
+#### Unreal Engine
+##### Stärken
+- **High-End-Grafik**  
+  Durch Technologien wie Nanite und Lumen ermöglicht die Engine fotorealistische Darstellung und dynamische Beleuchtung für qualitativ hochwertige 3D-Projekte.
+- **Blueprints & C++**  
+  Mit dem visuellen Scripting-System (Blueprints) ist ein schneller Einstieg möglich. Wer mehr Leistung und Flexibilität benötigt, kann auf C++ umsteigen.
+- **Umfangreiche Tools & Integration**  
+  Eine breite Palette an Entwicklertools (z. B. Animation Blueprints, Visual Effects, KI) und die enge Verzahnung mit professionellen Film- und TV-Produktionspipelines machen Unreal vielseitig einsetzbar.
+- **Große Community & AAA-Referenzen**  
+  Dank zahlreicher Foren, Tutorials und Marketplace-Inhalte findet man schnell Lösungen, Beispielcode und Assets. Viele AAA-Studios setzen auf Unreal, was den Bekanntheitsgrad steigert.
 
-## Stärken
+##### Schwächen
+- **Steile Lernkurve**  
+  Die Engine ist sehr mächtig und umfangreich. Einsteiger müssen mit erheblicher Einarbeitungszeit rechnen, besonders bei der C++-Programmierung.
+- **Hohe Systemanforderungen**  
+  Um die Vorteile von Nanite und Lumen auszuschöpfen, wird eine leistungsfähige Hardware vorausgesetzt. Auch der Editor selbst gilt als ressourcenintensiv.
+- **Kein offizieller Web-Export**  
+  Anders als bei Unity oder Godot bietet Epic seit UE4/UE5 keine offizielle Möglichkeit mehr, Projekte direkt für das Web zu exportieren. Externe Lösungen wie Pixel Streaming bieten nur einen begrenzten Ersatz.
+- **Binäre Asset-Dateien (UAssets)**  
+  Diese können in Versionskontrollsystemen zu Konflikten führen, da Merge-Tools häufig nicht mit Binärdateien umgehen können. Für Teamprojekte erfordert das eine durchdachte Arbeitsorganisation.
 
-- **Grafikqualität**: Herausragende Grafik dank Lumen und Nanite, ideal für fotorealistische Umgebungen.  
-- **Performance**: Leistungsstark, besonders für große und komplexe Spielwelten.  
-- **Visual Scripting**: Blueprints ermöglichen schnelles Prototyping ohne Programmierkenntnisse.  
-- **Community und Verbreitung**: Große Entwickler-Community mit vielen Ressourcen.
-  
-## Schwächen
-
-- **Komplexität**: Steile Lernkurve, besonders für Anfänger.  
-- **Hardware-Anforderungen**: Hohe Systemanforderungen für High-End-Rendering.  
-- **Teamarbeit**: Probleme bei der Zusammenarbeit mit binären Assets (UAssets).  
-- **C++-Abhängigkeit**: Für maximale Performance ist C++ erforderlich, was komplexer ist als Blueprints.  
 
 #### Godot
 ##### Stärken 
@@ -392,6 +391,26 @@ Unreal bietet erstklassige Rendering-Technologien, die nicht nur für Spiele, so
 
 Die Community bietet zahlreiche Ressourcen, um die visuelle Programmierung mit Blueprints zu erlernen. Außerdem ist Unreal für Lernzwecke und kleinere Projekte kostenlos nutzbar.
 
+#### Unity
+
+- Unity kann besonders gut für 2D Spiele oder VR-Anwendungen empfohlen werden. Auch 3D-Entwicklungen sind möglich. Diese können aber bei grafisch anspruchsvollen Spielen nicht mit anderen Engines mithalten. Auch Erwähnenswert ist die starke Community, die mit verschiedensten Tools, Addons und Tutorials die Spieleentwicklung enorm erleichtern. Zudem ist Unity eine budgetfreundliche Option die zudem eine breite Plattformunterstützung bietet.
+
+#### Unreal
+
+##### Spieleentwicklung
+- **High-End-3D-Spiele**: Die Unreal Engine ist besonders für groß angelegte 3D-Projekte mit fotorealistischer Grafik geeignet. Nanite (virtuelle Geometrie) und Lumen (dynamische globale Beleuchtung) sorgen für beeindruckende visuelle Ergebnisse und machen die Engine zum Favoriten bei AAA-Titeln.  
+- **Prototyping größerer Projekte**: Dank Blueprints lassen sich Mechaniken rasch umsetzen, ohne tiefgreifende Programmierkenntnisse. Für komplexe, rechenintensive Funktionen bietet C++ zusätzliche Performance und Flexibilität.
+
+##### Anwendungen und Tools
+- **Architekturvisualisierung und Simulationen**: Unreal eignet sich hervorragend für interaktive Simulationen oder begehbare Architekturrundgänge. Die hohe Grafikqualität und vielseitigen Physik-Features ermöglichen detailgetreue, immersive Szenen.  
+- **Film- und TV-Produktionen (Virtual Production)**: Die Engine hat sich im Bereich Virtual Production etabliert. Echtzeit-Rendering und Integration mit professionellem Filmequipment schaffen beeindruckende virtuelle Sets.
+
+##### Lern- und Bildungstools
+- **Blueprints als Einstieg**: Das visuelle Scripting-System erlaubt Einsteigern einen schnellen Zugang zu den Grundmechaniken, ohne sich zunächst in C++ einarbeiten zu müssen.  
+- **Umfangreiche Ressourcen**: Offizielle Dokumentationen, Video-Tutorials und eine große Community bieten zahlreiche Lernmaterialien. Fortgeschrittene Themen wie Shader-Programmierung und Netzwerkfeatures werden ebenfalls detailliert behandelt.  
+- **Community-Projekte**: Zahlreiche Indie-Projekte und GitHub-Repositories liefern praktische Beispiele, um verschiedene Genres und Anwendungsfälle zu erforschen.
+
+
 #### Godot
 **Spieleentwicklung** 
 
@@ -405,14 +424,21 @@ Godot kann für die Entwicklung von interaktiven Anwendungen und Tools verwendet
 Die Engine ist aufgrund ihrer Zugänglichkeit und der umfassenden Dokumentation eine großartige Wahl für Bildungseinrichtungen und Lernende, die in die Spielentwicklung einsteigen möchten. Die Engine bietet eine ideale Plattform, um grundlegende Konzepte der Programmierung und Spieleentwicklung zu erlernen.
 
 ## Anhang
-Unity Technologies, „Unity Lizenzmodelle,“ Unity, 2025. [Online]. Verfügbar: https://unity.com/de/products/compare-plans.
 
-Unity Technologies, „Unity-Dokumentation,“ Unity, 2025. [Online]. Verfügbar: https://docs.unity3d.com/Manual/index.html.
+### Referenzen
 
-Unity Technologies, „Unity-Forum,“ Unity Discussions, 2025. [Online]. Verfügbar: https://discussions.unity.com/.
 
-Unity Technologies, „Unity Learn,“ Unity Learn, 2025. [Online]. Verfügbar: https://learn.unity.com/.
-
-[DA LAB], „[Create and Publish WebGL Build in Unity],“ YouTube, 2025. [Online]. Verfügbar: https://www.youtube.com/watch?v=X8Njwk4IRo0
-
-[LlamAcademy], „[Ragdolls - Creation, Transitioning to, and Optimization | Unity Tutorial],“ YouTube, 2025. [Online]. Verfügbar: https://www.youtube.com/watch?v=RB18IyKZiB0.
+1. Unity Technologies, „Unity Lizenzmodelle,“ Unity, 2025. [Online]. Verfügbar: https://unity.com/de/products/compare-plans.
+1. Unity Technologies, „Unity-Dokumentation,“ Unity, 2025. [Online]. Verfügbar: https://docs.unity3d.com/Manual/index.html.
+1. Unity Technologies, „Unity-Forum,“ Unity Discussions, 2025. [Online]. Verfügbar: https://discussions.unity.com/.
+1. Unity Technologies, „Unity Learn,“ Unity Learn, 2025. [Online]. Verfügbar: https://learn.unity.com/.
+1. [DA LAB], „[Create and Publish WebGL Build in Unity],“ YouTube, 2025. [Online]. Verfügbar: https://www.youtube.com/watch?v=X8Njwk4IRo0
+1. [LlamAcademy], „[Ragdolls - Creation, Transitioning to, and Optimization | Unity Tutorial],“ YouTube, 2025. [Online]. Verfügbar: https://www.youtube.com/watch?v=RB18IyKZiB0.
+1. [Unreal Engine 5 – Offizielle Dokumentation](https://docs.unrealengine.com/5.0/en-US/)  
+2. [Unreal Engine Lizenzmodell](https://www.unrealengine.com/en-US/release)  
+3. [Blueprint Visual Scripting](https://docs.unrealengine.com/5.0/en-US/blueprints-visual-scripting-in-unreal-engine/)  
+4. [Nanite in Unreal Engine 5](https://docs.unrealengine.com/5.0/en-US/nanite-in-unreal-engine/)  
+5. [Lumen in Unreal Engine 5](https://docs.unrealengine.com/5.0/en-US/lumen-in-unreal-engine/)  
+6. [Pixel Streaming Informationen (Community Plugin)](https://docs.unrealengine.com/5.0/en-US/pixel-streaming-in-unreal-engine/)
+1. [Godot Dokumentation Referenz](https://docs.godotengine.org/de/4.x/index.html)
+1. [Godot Endless Runner Referenz](https://gameidea.org/2024/10/01/making-3d-endless-runner-game-part-1/)
